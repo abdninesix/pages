@@ -7,17 +7,17 @@ const Homepage = () => {
   return (
 
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-    <div className="overflow-auto h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="overflow-auto items-center h-full flex flex-col gap-4 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
 
-    {/*IMAGE CONTAINER */}
-    <motion.div className="h-1/2 lg:h-full lg:w-1/2 relative" animate={{ y: [0, -20, 0] }} transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}>
-      <Image src="/hero.png" alt="hero" fill className="object-contain"/>
+    {/*IMAGE CONTAINER*/}
+    <motion.div className="flex h-[200px] w-[200px] md:h-[600px] md:w-1/2 lg:mt-10" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
+      <Image src="/hero.png" alt="hero" fill objectFit="cover" className="rounded-full"/>
     </motion.div>
 
     {/*TEXT & BUTTON CONTAINER */}
-    <div className="h-[300px] lg:h-full lg:w-1/2 flex flex-col gap-5 justify-center text-center lg:text-left">
+    <div className="h-auto lg:h-full lg:w-1/2 flex flex-col gap-5 justify-center text-center lg:text-left">
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-2">
         <h1 className="text-4xl md:text-6xl font-bold z-20">Hi there!</h1>
         <h1 className="text-4xl md:text-6xl font-bold z-20 text-slate-700">I`m Abdullah</h1>
       </div>

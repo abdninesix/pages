@@ -13,8 +13,8 @@ const AboutPage = () => {
   const experienceRefView = useInView(experienceRef, {margin:"-100px"})
 
   return (
-    <motion.div className="h-full overflow-auto" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full lg:flex">
+    <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
+      <div className="h-full overflow-scroll lg:flex">
 
       {/*TEXT CONTAINER*/}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-20 flex flex-col gap-24 md:gap-32 lg:gap-38 xl:gap-64 lg:pr-0 lg:w-2/3 xl:1/2">
@@ -108,7 +108,7 @@ const AboutPage = () => {
         </div>
     
         {/*IMAGE CONTAINER*/}
-        <motion.div className="hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30" animate={{ y: [0, -20, 0] }} transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}>
+        <motion.div className="hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
           <Image src="/about.png" alt="" height={600} width={600}/>
         </motion.div>
 

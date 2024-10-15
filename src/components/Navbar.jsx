@@ -45,8 +45,8 @@ const itemVariants = {
       {/*LOGO*/}
         <div className="lg:flex lg:w-1/3 md:justify-start relative z-30">
             <Link href="/" className="text-sm bg-slate-700 rounded-full p-1 font-semibold flex items-left justify-center ring-slate-400 hover:ring-4">
-                <span className="text-white mr-1">Dev</span>
-                <span className="rounded-full bg-white text-black px-1">Abs</span>
+                <span className="text-white mr-1">A.</span>
+                <span className="rounded-full bg-white text-black px-1">Dev</span>
             </Link>
         </div>
 
