@@ -17,13 +17,13 @@ const Navbar = () => {
 const [open, setOpen] = useState(false)
 
 const topVariants = {
-  closed:{rotate:0}, opened:{x:10, rotate:45, backgroundColor:"rgb(255,255,255)"}
+  closed:{rotate:0}, opened:{x:10, rotate:45, backgroundColor:"rgb(220 38 38)"}
 }
 const centerVariants = {
   closed:{opacity:1}, opened:{opacity:0}
 }
 const bottomVariants = {
-  closed:{rotate:0}, opened:{x:10, rotate:-45, backgroundColor:"rgb(255,255,255)"}
+  closed:{rotate:0}, opened:{x:10, rotate:-45, backgroundColor:"rgb(220 38 38)"}
 }
 const listVariants = {
   closed:{x:50, y:-50}, opened:{x:0, y:0, transition:{staggerChildren:0.25, when:"beforeChildren"}}
@@ -44,21 +44,21 @@ const itemVariants = {
 
       {/*LOGO*/}
         <div className="lg:flex lg:w-1/3 md:justify-start relative z-30">
-            <Link href="/" className="text-sm bg-slate-700 rounded-full p-1 font-semibold flex items-left justify-center ring-slate-400 hover:ring-4">
-                <span className="text-white mr-1">A.</span>
-                <span className="rounded-full bg-white text-black px-1">Dev</span>
+            <Link href="/" className="text-sm bg-transparent rounded-full p-1 font-semibold flex items-center justify-center">
+                <span className="text-black">A.</span>
+                <span className="rounded-full bg-red-600 text-white px-1 py-1">Dev</span>
             </Link>
         </div>
 
       {/*Social links*/} 
         <div className="flex flex-row gap-2 justify-center md:justify-end w-fit">
-          <Link className="ring-slate-700 hover:bg-white p-1 rounded-lg" href="https://github.com/abdninesix">
+          <Link className="ring-white hover:ring-2 p-1 rounded-lg" href="https://github.com/abdninesix">
             <Image src="/github.png" alt="" width={32} height={32}/>
           </Link>
-          <Link className="ring-slate-700 hover:bg-white p-1 rounded-lg" href="https://www.freelancer.com/u/abdninesix">
+          <Link className="ring-white hover:ring-2 p-1 rounded-lg" href="https://www.freelancer.com/u/abdninesix">
             <Image src="/freelancer.png" alt="" width={32} height={32}/>
           </Link>
-          <Link className="ring-slate-700 hover:bg-white p-1 rounded-lg" href="https://www.behance.net/abdninesix">
+          <Link className="ring-white hover:ring-2 p-1 rounded-lg" href="https://www.behance.net/abdninesix">
             <Image src="/behance.png" alt="" width={32} height={32}/>
           </Link>
         </div>
@@ -72,12 +72,13 @@ const itemVariants = {
             <motion.div variants={bottomVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded origin-left"></motion.div>
           </button>
         </div>
+        
       {/*MENU ITEMS*/}
         {open && (
-        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-slate-900 text-stone-300 flex flex-col items-center justify-center gap-10 text-4xl z-10">
+        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-stone-400 text-black flex flex-col items-center justify-center gap-10 text-4xl z-10">
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
-              <Link href={link.url} >{link.title}</Link>
+              <Link className="p-2 rounded-xl ring-red-600 hover:ring-2" href={link.url} >{link.title}</Link>
             </motion.div>            
           ))}
         </motion.div>
