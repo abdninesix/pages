@@ -26,7 +26,7 @@ const PortfolioPage = () => {
               <div className="flex flex-col gap-8 p-10 h-full rounded-2xl text-white">
                 <h1 className="text-4xl xl:text-6xl">{item.title}</h1>
                 <div className="relative w-[350px] h-[175px] md:w-[600px] md:h-[300px] lg:w-[700px] lg:h-[350px] xl:w-[700px] xl:h-[350px]"><Image className="rounded-2xl" src={item.img} alt="" fill/></div>
-                <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] lg:text-xl text-justify">{item.desc}</p>
+                <p className="w-80 md:w-96 lg:w-[500px] xl:w-[600px] lg:text-xl">{item.desc}</p>
                 {/*<div className="flex justify-end"><Link href={item.link} className="bg-white hover:bg-gray-200 text-gray-600 text-sm md:text-lg lg:text-xl font-semibold p-2 md:p-3 xl:p-4 rounded-md">See Demo</Link></div>*/}
               </div>
             </div>))}
