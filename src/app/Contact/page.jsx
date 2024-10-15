@@ -46,12 +46,12 @@ const ContactPage = () => {
         </div>
 
 
-        <motion.form onSubmit={sendEmail} ref={form} className="ring-2 ring-black hover:ring-red-600 text-black p-4 rounded-2xl h-2/3 lg:h-[550px] md:w-[500px] lg:mt-5 text-xl flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
+        <motion.form onSubmit={sendEmail} ref={form} className="bg-red-600 text-white p-4 rounded-2xl h-2/3 lg:h-[550px] md:w-[500px] lg:mt-5 text-xl flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
             <span>Dear Abdullah,</span>
-            <textarea rows={8} name="user_message" className="rounded-xl bg-transparent border border-black resize-none"/>
+            <textarea rows={8} name="user_message" className="p-2 rounded-xl bg-transparent border border-white resize-none"/>
             <span>Email:</span>
-            <input name="user_email" type="text" className="rounded-xl bg-transparent border border-black resize-none"/>
-            <button className="bg-red-600 hover:bg-black text-white rounded-lg p-2 mt-3 w-fit animate-bounce">Send</button>
+            <input name="user_email" type="text" className="p-2 rounded-xl bg-transparent border border-white resize-none"/>
+            <button className="bg-white text-black rounded-lg p-2 mt-3 w-fit animate-bounce">Send</button>
             {success && <span className="text-green-600 text-center">Your message has been sent!</span>}
             {error && <span className="text-red-600 text-center">Something went wrong!</span>}
         </motion.form>

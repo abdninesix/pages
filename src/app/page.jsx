@@ -10,7 +10,7 @@ const Homepage = () => {
     <div className="overflow-auto items-center h-full flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
 
     {/*IMAGE CONTAINER*/}
-    <motion.div className="flex overflow-hidden w-44 h-44 md:w-56 md:h-56 lg:w-[500px] lg:h-[500px] p-2" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
+    <motion.div className="flex overflow-hidden w-44 h-44 md:w-56 md:h-56 lg:w-[500px] lg:h-[500px] p-2" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.25, delay:2, ease: "easeInOut" }}>
       <Image src="/hero.png" alt="hero" width={256} height={256} objectFit="cover" layout="responsive" className="h-full w-full rounded-full ring-4 ring-red-600"/>
     </motion.div>
 
