@@ -15,7 +15,7 @@ const PortfolioPage = () => {
   const x = useTransform(scrollYProgress, [0,1], ["0%", "-80%"]);
 
   return (
-    <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
+    <motion.div className="h-full text-black" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
       <div className="h-[600vh] relative">
         <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center  text-6xl md:text-8xl text-center">My work<Arrow/></div>
       

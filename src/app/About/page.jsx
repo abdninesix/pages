@@ -14,7 +14,7 @@ const AboutPage = () => {
 
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full overflow-scroll lg:flex">
+      <div className="h-full overflow-scroll lg:flex text-black">
 
       {/*TEXT CONTAINER*/}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-20 flex flex-col gap-48 md:gap-56 lg:gap-36 xl:gap-64 lg:pr-0 lg:w-2/3 xl:1/2">
