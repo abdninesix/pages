@@ -44,7 +44,7 @@ const itemVariants = {
 
       {/*LOGO*/}
         <div className="lg:flex lg:w-1/3 md:justify-start relative z-30">
-            <Link href="/" className="bg-zinc-300 text-sm bg-transparent rounded-full p-1 font-semibold flex items-center justify-center">
+            <Link href="/" className="bg-zinc-200 text-sm bg-transparent rounded-full p-1 font-semibold flex items-center justify-center">
                 <span className="text-black">A.</span>
                 <span className="rounded-full bg-red-600 text-white px-1 py-1">Dev</span>
             </Link>
@@ -60,6 +60,8 @@ const itemVariants = {
           </Link>
           <Link className="p-1 rounded-lg" href="https://www.behance.net/abdninesix">
             <Image src="/behance.png" alt="" width={32} height={32}/>
+          </Link><Link className="p-1 rounded-lg" href="https://www.upwork.com/freelancers/~0194244346098915a5">
+            <Image src="/upwork.png" alt="" width={32} height={32}/>
           </Link>
         </div>
 

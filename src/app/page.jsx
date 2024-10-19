@@ -19,7 +19,7 @@ const Homepage = () => {
 
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl md:text-6xl font-bold z-20">Abdullah</h1>
-        <h1 className="text-4xl md:text-6xl font-bold z-20 text-red-600">Frontend designer</h1>
+        <h1 className="text-4xl md:text-6xl font-bold z-20 text-red-600">Frontend Developer</h1>
       </div>
       <p className="md:text-xl text-left">I am an enthusiastic Bachelor of Computer-Science with a noticeable CGPA of 3.45 and a strong foundation in web development and a passion for exploring various fields within technology. Proficient in HTML, CSS, JavaScript, React.js and Next.js, with hands-on experience in building responsive and user-friendly web applications. Eager to apply problem-solving skills and creativity to develop innovative web solutions. Aspiring to expand expertise in full stack web engineering for future projects.</p>
 
