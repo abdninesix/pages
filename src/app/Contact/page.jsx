@@ -35,9 +35,9 @@ const ContactPage = () => {
 
   return (
     <motion.div className="h-full text-black" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full overflow-auto flex flex-col items-center justify-between gap-2 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full overflow-auto flex flex-col items-center justify-between gap-2 lg:flex-row pb-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         
-        <div className="h-[180px] lg:h-full lg:w-[500px] p-10 lg:mt-36 flex items-start justify-center text-justify text-4xl md:text-6xl text-black">
+        <div className="h-[180px] lg:h-full lg:w-[500px] p-10 lg:mt-36 flex items-start justify-center text-justify text-3xl md:text-6xl text-black">
           <div>
             {text.split("").map((letter,index) => (
               <motion.span key={index} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:2, repeat:Infinity, delay:index*0.1}}>{letter}</motion.span>
@@ -46,7 +46,7 @@ const ContactPage = () => {
         </div>
 
 
-        <motion.form onSubmit={sendEmail} ref={form} className="bg-gradient-to-r from-red-600 to-red-700 text-white p-4 rounded-2xl h-2/3 lg:h-[550px] md:w-[500px] lg:mt-5 text-xl flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
+        <motion.form onSubmit={sendEmail} ref={form} className="shadow-md shadow-black bg-red-600 text-white p-4 rounded-2xl h-2/3 lg:h-[550px] md:w-[500px] lg:mt-5 text-xl flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
             <span>Dear Abdullah,</span>
             <textarea rows={8} name="user_message" className="p-2 rounded-xl bg-gray-100 border border-white resize-none"/>
             <span>Email:</span>

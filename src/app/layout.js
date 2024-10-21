@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export async function generateMetadata() {
   return {
     title: "Portfolio | Abdullah",
-    description: "A true experience of website",
+    description: "Experience true responsiveness",
     icons: {
       icon: "/src/app/favicon.ico",
     },

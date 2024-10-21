@@ -52,15 +52,15 @@ const itemVariants = {
 
       {/*Social links*/} 
         <div className="flex flex-row gap-2 justify-center md:justify-end w-fit">
-          <Link className="p-1 rounded-lg" href="https://github.com/abdninesix">
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://github.com/abdninesix">
             <Image src="/github.png" alt="" width={32} height={32}/>
           </Link>
-          <Link className="p-1 rounded-lg" href="https://www.freelancer.com/u/abdninesix">
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://www.freelancer.com/u/abdninesix">
             <Image src="/freelancer.png" alt="" width={32} height={32}/>
           </Link>
-          <Link className="p-1 rounded-lg" href="https://www.behance.net/abdninesix">
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://www.behance.net/abdninesix">
             <Image src="/behance.png" alt="" width={32} height={32}/>
-          </Link><Link className="p-1 rounded-lg" href="https://www.upwork.com/freelancers/~0194244346098915a5">
+          </Link><Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://www.upwork.com/freelancers/~0194244346098915a5">
             <Image src="/upwork.png" alt="" width={32} height={32}/>
           </Link>
         </div>
