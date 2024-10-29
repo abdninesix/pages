@@ -37,6 +37,8 @@ const AboutPage = () => {
               <div className="p-2 rounded text-sm bg-gray-800 text-white ">TailwindCSS</div>
               <div className="p-2 rounded text-sm bg-gray-800 text-white ">Framer-motion</div>
               <div className="p-2 rounded text-sm bg-gray-800 text-white ">Figma</div>
+              <div className="p-2 rounded text-sm bg-gray-800 text-white ">Node.js</div>
+              <div className="p-2 rounded text-sm bg-gray-800 text-white ">Expess.js</div>
             </motion.div>
             <Arrow/>
           </div>
@@ -49,8 +51,8 @@ const AboutPage = () => {
         {/*LIST ITEM*/}       
               <div className="flex justify-between h-[320px] md:h-48">
                 <div className="w-1/3 relative">
-                  <div className="shadow-md shadow-gray-800 p-4 bg-white font-semibold rounded-md text-center w-fit">Frontend Web</div>
-                  <div className="-mx-2 p-3 text-sm">Skilled Frontend Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
+                  <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Frontend Web</div>
+                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Skilled Frontend Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
                   <div className="text-sm font-semibold underline text-red-600">2022-Present</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
                 </div>
@@ -76,8 +78,8 @@ const AboutPage = () => {
                 </div>
 
                 <div className="w-1/3 relative">
-                  <div className="shadow-md shadow-gray-800 p-4 bg-white font-semibold rounded-md text-center w-fit">Android Studio</div>
-                  <div className="-mx-2 p-3 text-sm">Seasoned Android Studio Java developer with a knack for building user-friendly mobile applications. Expert in Java programming and Android SDK, focused on creating seamless, high-performance apps tailored to user needs.</div>
+                  <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Android Studio</div>
+                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Seasoned Android Studio Java developer with a knack for building user-friendly mobile applications. Expert in Java programming and Android SDK, focused on creating seamless, high-performance apps tailored to user needs.</div>
                   <div className="text-sm font-semibold underline text-red-600">2021-2022</div>
                 </div>
 
@@ -86,8 +88,8 @@ const AboutPage = () => {
         {/*LIST ITEM 3*/}
               <div className="flex justify-between h-[320px] md:h-48">
                 <div className="w-1/3 relative">
-                  <div className="shadow-md shadow-gray-800 p-4 bg-white font-semibold rounded-md text-center w-fit">Visual Studio</div>
-                  <div className="-mx-2 p-3 text-sm">Experienced Visual Studio C# developer skilled in crafting robust applications using the .NET framework. Adept at problem-solving, writing clean code, and continuously updating projects to keep up with technological advancements.</div>
+                  <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Visual Studio</div>
+                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Experienced Visual Studio C# developer skilled in crafting robust applications using the .NET framework. Adept at problem-solving, writing clean code, and continuously updating projects to keep up with technological advancements.</div>
                   <div className="text-sm font-semibold underline text-red-600">2020-2021</div>
                 </div>
 
@@ -109,7 +111,7 @@ const AboutPage = () => {
     
         {/*IMAGE CONTAINER*/}
         <motion.div className="hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
-          <Image src="/about.png" alt="" height={600} width={600}/>
+          <Image className="rounded-tl-[150px] rounded-br-[150px]" src="/about.png" alt="" height={600} width={600}/>
         </motion.div>
 
       </div>
