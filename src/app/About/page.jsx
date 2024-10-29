@@ -21,7 +21,7 @@ const AboutPage = () => {
       {/*BIO*/}
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-4xl">BIOGRAPHY</h1>
-            <p className="md:text-xl">I am a dedicated and versatile Frontend developer with a passion for creating efficient and user-friendly web applications. With years of experience, I have worked with a variety of technologies. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to projects.</p>
+            <p className="md:text-xl">I am a dedicated and versatile web developer with a passion for creating efficient and user-friendly web applications. With years of experience, I have worked with a variety of technologies. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to projects.</p>
             <Arrow/>
           </div>
           
@@ -51,8 +51,8 @@ const AboutPage = () => {
         {/*LIST ITEM*/}       
               <div className="flex justify-between h-[320px] md:h-48">
                 <div className="w-1/3 relative">
-                  <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Frontend Web</div>
-                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Skilled Frontend Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
+                  <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Fullstack Web</div>
+                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Skilled Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
                   <div className="text-sm font-semibold underline text-red-600">2022-Present</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
                 </div>

@@ -21,10 +21,10 @@ const Homepage = () => {
         <h1 className="text-4xl md:text-6xl font-bold z-20">Meet <span className="text-red-600"> Abdullah</span></h1>
         <h1 className="text-4xl md:text-4xl font-bold z-20 text-black">A<span className="text-red-600"> Web Developer</span></h1>
       </div>
-      <p className="md:text-xl text-left">An enthusiastic Bachelor of Computer-Science with a noticeable CGPA of 3.45 and a strong foundation in web development and a passion for exploring various fields within technology. Proficient in HTML, CSS, JavaScript, React.js and Next.js, with hands-on experience in building responsive and user-friendly web applications. Eager to apply problem-solving skills and creativity to develop innovative web solutions. Aspiring to expand expertise in full stack web engineering for future projects.</p>
+      <p className="md:text-xl text-left">An enthusiastic Bachelor of Computer-Science with a noticeable CGPA of 3.45 and a strong foundation in web development and a passion for exploring various fields within technology. Proficient in HTML, CSS and JavaScript with hands-on experience in building responsive and user-friendly web applications. Eager to apply problem-solving skills and creativity to develop innovative web solutions. Aspiring to expand expertise in full stack web engineering for future projects.</p>
 
       <div className="flex gap-4 justify-start">
-        <Link href="/Portfolio" className="bg-red-600 hover:bg-black text-white rounded-lg p-2">Check out my work</Link>
+        <Link href="/Portfolio" className="bg-red-600 hover:bg-black text-white rounded-lg p-2 shadow-md shadow-gray-400">Check out my work</Link>
         <Link href="/Contact" className="ring-1 ring-black hover:ring-2 text-black font-semibold rounded-lg p-2">Work with me</Link>
       </div>
 

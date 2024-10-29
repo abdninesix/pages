@@ -54,7 +54,7 @@ const PortfolioPage = () => {
             </textPath>
             </text>
             </svg>
-            <Link href="/Contact" className="w-28 h-28 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-red-600 ring-red-600 hover:ring-2 text-xl text-white rounded-full flex items-center justify-center">Hire me</Link>
+            <Link href="/Contact" className="w-28 h-28 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-red-600 ring-red-600 hover:ring-2  shadow-md shadow-gray-400 text-xl text-white rounded-full flex items-center justify-center">Hire me</Link>
           </div>
       </div>
 
