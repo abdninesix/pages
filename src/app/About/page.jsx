@@ -21,7 +21,8 @@ const AboutPage = () => {
       {/*BIO*/}
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-4xl">BIOGRAPHY</h1>
-            <p className="md:text-xl">I am a dedicated and versatile web developer with a passion for creating efficient and user-friendly web applications. With years of experience, I have worked with a variety of technologies. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to projects.</p>
+            <p className="md:text-xl">I'm a coding whiz who blends tech and creativity. Skilled in Visual Studio and Android Studio, I've crafted slick apps and web front-ends. But I'm not just about code, I'm also a 3D whiz with Blender and SolidWorks, turning ideas into reality with 3D printing. Whether it's designing a new app interface or creating a complex 3D model, I bring a unique blend of technical expertise and artistic flair to my work.</p>
+            <p className="md:text-xl">When I'm not lost in code, you'll find me experimenting with new design techniques or fine-tuning my latest 3D print. I thrive on solving complex problems and pushing the boundaries of what's possible, always with an eye for detail and a passion for perfection. Whether I'm coding up a storm or designing futuristic prototypes, I bring passion and precision to every project, making tech both fun and functional.</p>
             <Arrow/>
           </div>
           
@@ -39,6 +40,7 @@ const AboutPage = () => {
               <div className="p-2 rounded text-sm bg-gray-800 text-white ">Figma</div>
               <div className="p-2 rounded text-sm bg-gray-800 text-white ">Node.js</div>
               <div className="p-2 rounded text-sm bg-gray-800 text-white ">Expess.js</div>
+              <div className="p-2 rounded text-sm bg-gray-800 text-white ">MongoDB</div>
             </motion.div>
             <Arrow/>
           </div>
@@ -48,12 +50,31 @@ const AboutPage = () => {
             <motion.h1 initial={{x:"-500px"}} animate={experienceRefView ? {x:"0"} : {}} className="font-bold text-2xl">EXPERIENCE</motion.h1>
             <motion.div initial={{x:"-500px"}} animate={experienceRefView ? {x:"0"} : {}} transition={{delay:0.2}}>
 
-        {/*LIST ITEM*/}       
-              <div className="flex justify-between h-[320px] md:h-48">
+        {/*LIST ITEM 1*/}       
+        <div className="flex justify-between h-[320px] md:h-48">
+                <div className="w-1/3 relative"></div>
+
+                <div>
+                  <div className="w-1 h-full md:-left-4 bg-gray-600 rounded relative">
+                    <div className="absolute -left-2 w-5 h-5 rounded-full ring-4 ring-red-600 bg-white"></div>
+                  </div>
+                </div>
+
                 <div className="w-1/3 relative">
-                  <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Fullstack Web</div>
+                <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Fullstack Web</div>
                   <div className="-mx-2 p-3 text-[11px] md:text-sm">Skilled Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
                   <div className="text-sm font-semibold underline text-red-600">2022-Present</div>
+                  {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
+                </div>
+
+              </div>
+
+        {/*LIST ITEM 1*/}       
+        <div className="flex justify-between h-[320px] md:h-48">
+                <div className="w-1/3 relative">
+                  <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Frontend Web</div>
+                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Skilled Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
+                  <div className="text-sm font-semibold underline text-red-600">2022</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
                 </div>
 
