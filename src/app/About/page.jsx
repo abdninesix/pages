@@ -62,7 +62,7 @@ const AboutPage = () => {
 
                 <div className="w-1/3 relative">
                 <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Fullstack Web</div>
-                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Skilled Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
+                  <div className="-mx-2 p-3 text-[11px] md:text-sm">I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time. 🚀</div>
                   <div className="text-sm font-semibold underline text-red-600">2022-Present</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
                 </div>
@@ -73,7 +73,7 @@ const AboutPage = () => {
         <div className="flex justify-between h-[320px] md:h-48">
                 <div className="w-1/3 relative">
                   <div className="shadow-md shadow-gray-400 p-4 bg-white font-semibold rounded-md text-center w-fit">Frontend Web</div>
-                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Skilled Web Developer with a talent for creating responsive and visually appealing websites. Proficient in HTML, CSS, and JavaScript, with a keen eye for design and user experience.</div>
+                  <div className="-mx-2 p-3 text-[11px] md:text-sm">I&apos;m a frontend dev, crafting responsive, visually appealing interfaces with HTML, CSS, and JavaScript. Every project is a chance to enhance the digital experience and make the web more enjoyable for all. 🎨💻</div>
                   <div className="text-sm font-semibold underline text-red-600">2022</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
                 </div>
