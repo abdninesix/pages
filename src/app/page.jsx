@@ -18,10 +18,10 @@ const Homepage = () => {
     <div className="h-auto lg:h-full lg:w-1/2 flex flex-col gap-5 lg:gap-10 justify-center text-center lg:text-left">
 
       <div className="flex flex-col gap-2">
-        <h1 className="text-4xl md:text-6xl font-bold z-20">Meet <span className="text-red-600"> Abdullah</span></h1>
-        <h1 className="text-2xl md:text-4xl font-bold z-20 text-black">A<span className=""> MERN Stack Web Developer</span></h1>
+        <h1 className="text-4xl md:text-6xl font-bold z-20">Meet <span className="text-red-600">Abdullah</span></h1>
+        <h1 className="text-2xl md:text-4xl font-bold z-20 text-black">A <span className="">MERN Stack Web Developer</span></h1>
       </div>
-      <p className="md:text-xl text-left">As a MERN stack developer, he's all about crafting awesome web apps using MongoDB, Express.js, React, and Node.js. With a CGPA of 3.45, he's shown he's got the brains and the talent. He's got a knack for making interfaces that users love and back-ends that run like a dream. With a solid JavaScript foundation and a flair for design, he's always up for tackling tricky challenges and boosting performance. Leveraging the MERN stack, he's all about creating cool, innovative solutions that keep businesses thriving and users happy.</p>
+      <p className="md:text-xl text-left">As a MERN stack developer, he&apos;s all about crafting awesome web apps using MongoDB, Express.js, React, and Node.js. With a CGPA of 3.45, he&apos;s shown he&apos;s got the brains and the talent. He&apos;s got a knack for making interfaces that users love and back-ends that run like a dream. With a solid JavaScript foundation and a flair for design, he&apos;s always up for tackling tricky challenges and boosting performance. Leveraging the MERN stack, he&apos;s all about creating cool, innovative solutions that keep businesses thriving and users happy.</p>
 
       <div className="flex gap-4 justify-start">
         <Link href="/Portfolio" className="bg-red-600 hover:bg-black text-white rounded-lg p-2 shadow-md shadow-gray-400">Check out my work</Link>

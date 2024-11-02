@@ -21,8 +21,8 @@ const AboutPage = () => {
       {/*BIO*/}
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-4xl">BIOGRAPHY</h1>
-            <p className="md:text-xl">I'm a coding whiz who blends tech and creativity. Skilled in Visual Studio and Android Studio, I've crafted slick apps and web front-ends. But I'm not just about code, I'm also a 3D whiz with Blender and SolidWorks, turning ideas into reality with 3D printing. Whether it's designing a new app interface or creating a complex 3D model, I bring a unique blend of technical expertise and artistic flair to my work.</p>
-            <p className="md:text-xl">When I'm not lost in code, you'll find me experimenting with new design techniques or fine-tuning my latest 3D print. I thrive on solving complex problems and pushing the boundaries of what's possible, always with an eye for detail and a passion for perfection. Whether I'm coding up a storm or designing futuristic prototypes, I bring passion and precision to every project, making tech both fun and functional.</p>
+            <p className="md:text-xl">I&apos;m a coding whiz who blends tech and creativity. Skilled in Visual Studio and Android Studio, I&apos;ve crafted slick apps and web front-ends. But I&apos;m not just about code, I&apos;m also a 3D whiz with Blender and SolidWorks, turning ideas into reality with 3D printing. Whether it&apos;s designing a new app interface or creating a complex 3D model, I bring a unique blend of technical expertise and artistic flair to my work.</p>
+            <p className="md:text-xl">When I&apos;m not lost in code, you&apos;ll find me experimenting with new design techniques or fine-tuning my latest 3D print. I thrive on solving complex problems and pushing the boundaries of what&apos;s possible, always with an eye for detail and a passion for perfection. Whether I&apos;m coding up a storm or designing futuristic prototypes, I bring passion and precision to every project, making tech both fun and functional.</p>
             <Arrow/>
           </div>
           
