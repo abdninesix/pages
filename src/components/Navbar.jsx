@@ -18,13 +18,13 @@ const Navbar = () => {
 const [open, setOpen] = useState(false)
 
 const topVariants = {
-  closed:{rotate:0}, opened:{x:10, rotate:45, backgroundColor:"rgb(255 255 255)"}
+  closed:{rotate:0}, opened:{x:10, rotate:45}
 }
 const centerVariants = {
   closed:{opacity:1}, opened:{opacity:0}
 }
 const bottomVariants = {
-  closed:{rotate:0}, opened:{x:10, rotate:-45, backgroundColor:"rgb(255 255 255)"}
+  closed:{rotate:0}, opened:{x:10, rotate:-45}
 }
 const listVariants = {
   closed:{x:50, y:-50}, opened:{x:0, y:0, transition:{staggerChildren:0.25, when:"beforeChildren"}}
@@ -46,9 +46,9 @@ const itemVariants = {
       
 
       {/*LOGO*/}
-        <div className="lg:flex lg:w-fit md:justify-end relative z-30">
-            <Link href="/" className="bg-zinc-200 text-sm bg-transparent rounded-lg p-1 font-semibold flex items-center justify-center">
-                <span className="text-black">A.</span>
+        <div className="lg:w-fit md:hidden lg:flex relative z-30">
+            <Link href="/" className="text-sm bg-transparent rounded-lg p-1 font-semibold flex items-center justify-center">
+                <span className="">A.</span>
                 <span className="rounded-md bg-red-600 text-white px-1 py-1">Dev</span>
             </Link>
         </div>
@@ -56,16 +56,20 @@ const itemVariants = {
 
       {/*Social links*/} 
         <div className="flex flex-row gap-2 justify-center md:justify-end w-fit">
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://github.com/abdninesix">
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300" href="https://www.behance.net/abdninesix">
+            <Image src="/behance.png" alt="" width={32} height={32}/>
+          </Link>
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300" href="https://github.com/abdninesix">
             <Image src="/github.png" alt="" width={32} height={32}/>
           </Link>
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://www.freelancer.com/u/abdninesix">
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300" href="https://www.freelancer.com/u/abdninesix">
             <Image src="/freelancer.png" alt="" width={32} height={32}/>
           </Link>
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://www.behance.net/abdninesix">
-            <Image src="/behance.png" alt="" width={32} height={32}/>
-          </Link><Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg" href="https://www.upwork.com/freelancers/~0194244346098915a5">
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300 " href="https://www.upwork.com/freelancers/~0194244346098915a5">
             <Image src="/upwork.png" alt="" width={32} height={32}/>
+          </Link>
+          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300 " href="">
+            <Image src="/linkedin.png" alt="" width={32} height={32}/>
           </Link>
         </div>
 
@@ -73,9 +77,9 @@ const itemVariants = {
         <div className="md:hidden">
       {/*MENU BUTTON*/}
           <button className="w-10 h-8 flex flex-col justify-between z-20 relative" onClick={() =>setOpen((prev) => !prev)}>
-            <motion.div variants={topVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded origin-left"></motion.div>
-            <motion.div variants={centerVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded"></motion.div>
-            <motion.div variants={bottomVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black rounded origin-left"></motion.div>
+            <motion.div variants={topVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black dark:bg-white rounded origin-left"></motion.div>
+            <motion.div variants={centerVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black dark:bg-white rounded"></motion.div>
+            <motion.div variants={bottomVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black dark:bg-white rounded origin-left"></motion.div>
           </button>
         </div>
         
