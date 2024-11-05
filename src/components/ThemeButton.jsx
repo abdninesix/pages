@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { setTheme } from './Theme'
 
@@ -25,7 +27,7 @@ const ThemeButton = () => {
 
         {/* sun icon */}
         <svg
-            className="swap-off h-8 w-8 fill-current text-orange-black"
+            className="swap-off h-8 w-8 fill-current text-black dark:text-yellow-300"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             onClick={handleThemeChange}>
@@ -35,7 +37,7 @@ const ThemeButton = () => {
 
         {/* moon icon */}
         <svg
-            className="swap-on h-8 w-8 fill-current text-blue-500"
+            className="swap-on h-8 w-8 fill-current text-blue-700 dark:text-blue-300"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             onClick={handleThemeChange}>

@@ -18,7 +18,7 @@ const items = [
     {
       id: 3,
       color: "from-gray-400 to-red-400",
-      title: "Cutting Edge Blogs",
+      title: "Cutting Edge SAAS Pages",
       desc: "I create visually stunning and user-friendly blog designs that captivate readers and enhance their experience. By focusing on clean layouts, engaging visuals, and intuitive navigation, I ensure each blog is not only aesthetically pleasing but also optimized for readability and SEO",
       img: "/Projects/3.gif",
       link: "",

@@ -81,8 +81,8 @@ const itemVariants = {
         
       {/*MENU ITEMS*/}
         {open && (
-        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-500 dark:bg-gray-900 flex flex-col items-center justify-center gap-10 text-4xl z-10">
-          <ThemeButton className="hidden"/>
+        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-900 flex flex-col items-center justify-center gap-10 text-4xl z-10">
+          <ThemeButton/>
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
               <Link className="p-2 rounded-xl text-gray-900 dark:text-gray-400 ring-red-600 hover:ring-2" href={link.url} >{link.title}</Link>
