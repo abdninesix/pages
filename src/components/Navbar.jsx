@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react";
 import NavLink from "./NavLink";
 import {motion} from "framer-motion"
+import ThemeButton from "./ThemeButton";
 
 const links = [
   {url: "/", title:"Home" },
@@ -40,15 +41,18 @@ const itemVariants = {
       {links.map(link=>(
             <NavLink link = {link} key={link.title}/>
           ))}
+          <ThemeButton/>
       </div>
+      
 
       {/*LOGO*/}
-        <div className="lg:flex lg:w-1/3 md:justify-start relative z-30">
+        <div className="lg:flex lg:w-fit md:justify-end relative z-30">
             <Link href="/" className="bg-zinc-200 text-sm bg-transparent rounded-lg p-1 font-semibold flex items-center justify-center">
                 <span className="text-black">A.</span>
                 <span className="rounded-md bg-red-600 text-white px-1 py-1">Dev</span>
             </Link>
         </div>
+
 
       {/*Social links*/} 
         <div className="flex flex-row gap-2 justify-center md:justify-end w-fit">
@@ -77,10 +81,11 @@ const itemVariants = {
         
       {/*MENU ITEMS*/}
         {open && (
-        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-600 text-black flex flex-col items-center justify-center gap-10 text-4xl z-10">
+        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-500 dark:bg-gray-900 flex flex-col items-center justify-center gap-10 text-4xl z-10">
+          <ThemeButton className="hidden"/>
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
-              <Link className="p-2 rounded-xl text-white ring-red-600 hover:ring-2" href={link.url} >{link.title}</Link>
+              <Link className="p-2 rounded-xl text-gray-900 dark:text-gray-400 ring-red-600 hover:ring-2" href={link.url} >{link.title}</Link>
             </motion.div>            
           ))}
         </motion.div>
