@@ -5,6 +5,7 @@ import { useState } from "react";
 import NavLink from "./NavLink";
 import {motion} from "framer-motion"
 import ThemeButton from "./ThemeButton";
+import Socials from "./Socials";
 
 const links = [
   {url: "/", title:"Home" },
@@ -55,23 +56,11 @@ const itemVariants = {
 
 
       {/*Social links*/} 
-        <div className="flex flex-row gap-2 justify-center md:justify-end w-fit">
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300" href="https://www.behance.net/abdninesix">
-            <Image src="/behance.png" alt="" width={32} height={32}/>
-          </Link>
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300" href="https://github.com/abdninesix">
-            <Image src="/github.png" alt="" width={32} height={32}/>
-          </Link>
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300" href="https://www.freelancer.com/u/abdninesix">
-            <Image src="/freelancer.png" alt="" width={32} height={32}/>
-          </Link>
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300 " href="https://www.upwork.com/freelancers/~0194244346098915a5">
-            <Image src="/upwork.png" alt="" width={32} height={32}/>
-          </Link>
-          <Link className="h-8 w-8 md:h-10 md:w-10 p-1 rounded-lg bg-gray-300 " href="">
-            <Image src="/linkedin.png" alt="" width={32} height={32}/>
-          </Link>
+        <div className="hidden md:flex">
+          <Socials/>
         </div>
+      
+      <div className="flex z-30 md:hidden"><ThemeButton/></div>
 
       {/*MENU*/}
         <div className="md:hidden">
@@ -85,13 +74,12 @@ const itemVariants = {
         
       {/*MENU ITEMS*/}
         {open && (
-        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-900 flex flex-col items-center justify-center gap-10 text-4xl z-10">
-          <ThemeButton/>
+        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-900 flex flex-col items-center justify-center gap-10 text-4xl font-semibold z-10">
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
               <Link className="p-2 rounded-xl text-gray-900 dark:text-gray-400 ring-red-600 hover:ring-2" href={link.url} >{link.title}</Link>
             </motion.div>            
-          ))}
+          ))} <div className="absolute bottom-20"><Socials/></div>
         </motion.div>
         )}
 

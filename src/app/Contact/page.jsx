@@ -46,11 +46,11 @@ const ContactPage = () => {
         </div>
 
 
-        <motion.form onSubmit={sendEmail} ref={form} className="shadow-md shadow-gray-800 bg-red-600 text-white p-4 rounded-2xl h-2/3 w-[400px] lg:h-[550px] md:w-[500px] lg:mt-5 text-xl flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
+        <motion.form onSubmit={sendEmail} ref={form} className="shadow-md shadow-gray-800 bg-red-600 text-white p-4 rounded-2xl h-2/3 w-[350px] lg:h-[550px] md:w-[500px] lg:mt-5 text-xl flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
             <span>Your message:</span>
             <textarea rows={8} name="user_message" placeholder="Dear, Abdullah" className="p-2 rounded-xl bg-gray-100 text-black border border-white resize-none"/>
             <span>Your email:</span>
-            <input name="user_email" type="text" placeholder="somethingsomething@somthing.com" className="p-2 rounded-xl bg-gray-100 text-black border border-white resize-none"/>
+            <input name="user_email" type="text" placeholder="something@somthing.com" className="p-2 rounded-xl bg-gray-100 text-black border border-white resize-none"/>
             <button className="bg-white text-black rounded-lg p-2 mt-3 w-fit animate-bounce">Send</button>
             {success && <span className="text-green-600 text-center">Your message has been sent!</span>}
             {error && <span className="text-red-600 text-center">Something went wrong!</span>}
