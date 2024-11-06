@@ -123,7 +123,7 @@ const AboutPage = () => {
         </div>
     
         {/*IMAGE CONTAINER*/}
-        <motion.div className="hidden lg:block w-1/3 xl:w-1/2 sticky top-0 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
+        <motion.div className="hidden lg:block w-1/3 xl:w-1/2 sticky top-10 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
           <Image className="rounded-tl-[150px] rounded-br-[150px]" src="/about.png" alt="" height={600} width={600}/>
         </motion.div>
 
