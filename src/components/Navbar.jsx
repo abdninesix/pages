@@ -36,16 +36,7 @@ const itemVariants = {
 
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
-
-      {/*MENU*/}
-      <div className="hidden md:flex gap-5 w-1/3">
-      {links.map(link=>(
-            <NavLink link = {link} key={link.title}/>
-          ))}
-          <ThemeButton/>
-      </div>
       
-
       {/*LOGO*/}
         <div className="lg:w-fit md:hidden lg:flex relative z-30">
             <Link href="/" className="text-sm bg-transparent rounded-lg p-1 font-semibold flex items-center justify-center">
@@ -54,6 +45,13 @@ const itemVariants = {
             </Link>
         </div>
 
+       {/*MENU*/}
+       <div className="hidden md:flex gap-5 w-1/3">
+      {links.map(link=>(
+            <NavLink link = {link} key={link.title}/>
+          ))}
+          <ThemeButton/>
+      </div>
 
       {/*Social links*/} 
         <div className="hidden md:flex">
@@ -74,10 +72,10 @@ const itemVariants = {
         
       {/*MENU ITEMS*/}
         {open && (
-        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-900 flex flex-col items-center justify-center gap-10 text-4xl font-semibold z-10">
+        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-700 duration-200 flex flex-col items-center justify-center gap-10 text-4xl font-semibold z-10">
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
-              <Link className="p-2 rounded-xl text-gray-900 dark:text-gray-400 ring-red-600 hover:ring-2" href={link.url} >{link.title}</Link>
+              <Link className="p-2 rounded-xl text-gray-800 dark:text-gray-300 ring-red-400 hover:ring-2" href={link.url} >{link.title}</Link>
             </motion.div>            
           ))} <div className="absolute bottom-20"><Socials/></div>
         </motion.div>
