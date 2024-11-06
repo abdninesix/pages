@@ -72,10 +72,10 @@ const itemVariants = {
         
       {/*MENU ITEMS*/}
         {open && (
-        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-700 duration-200 flex flex-col items-center justify-center gap-10 text-4xl font-semibold z-10">
+        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-700 flex flex-col items-center justify-center gap-10 text-4xl font-medium z-10">
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
-              <Link className="p-2 rounded-xl text-gray-800 dark:text-gray-300 ring-red-400 hover:ring-2" href={link.url} >{link.title}</Link>
+              <Link className="p-2 rounded-xl text-gray-700 dark:text-gray-300 ring-red-400 hover:ring-2" href={link.url} >{link.title}</Link>
             </motion.div>            
           ))} <div className="absolute bottom-20"><Socials/></div>
         </motion.div>
