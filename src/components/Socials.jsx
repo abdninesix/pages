@@ -15,7 +15,7 @@ const Socials = () => {
   return (
     <motion.div className="flex flex-row gap-2 p-1 justify-center md:justify-end w-fit rounded-lg bg-gray-300 animate-bounce md:animate-none" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.3, delay:1.5}}>
           {profiles.map((profile, index) => (
-            <Link key={index} className="h-8 w-8 md:h-10 md:w-10 p-1" href={profile.href}>
+            <Link key={index} className="h-8 w-8 p-1" href={profile.href}>
               <Image src={profile.src} alt={profile.alt} width={32} height={32} />
             </Link> ))}
     </motion.div>

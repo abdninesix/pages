@@ -10,8 +10,8 @@ const Homepage = () => {
     <div className="overflow-auto items-center h-full flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
 
     {/*IMAGE CONTAINER*/}
-    <motion.div className="flex overflow-hidden w-44 h-44 md:w-56 md:h-56 lg:w-[500px] lg:h-[500px] p-2" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.25, delay:2, ease: "easeInOut" }}>
-      <Image src="/hero.png" alt="hero" width={256} height={256} layout="responsive" className="h-full w-full rounded-full ring ring-red-600"/>
+    <motion.div className="flex-none overflow-hidden w-44 h-44 md:w-56 md:h-56 lg:w-[500px] lg:h-[500px] p-2" initial={{y:-150, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.25, delay:1, ease: "easeInOut" }}>
+      <Image src="/hero.png" alt="hero" width={500} height={500} className="h-full w-full rounded-full ring ring-red-600"/>
     </motion.div>
 
     {/*TEXT & BUTTON CONTAINER */}
