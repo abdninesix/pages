@@ -6,6 +6,9 @@ import NavLink from "./NavLink";
 import {motion} from "framer-motion"
 import ThemeButton from "./ThemeButton";
 import Socials from "./Socials";
+import { Alex_Brush, Luxurious_Script, Miss_Fajardose } from "next/font/google";
+
+const myfont2 = Alex_Brush({ weight: '400', subsets: ['latin'], display: 'swap', });
 
 const links = [
   {url: "/", title:"Home" },
@@ -38,19 +41,18 @@ const itemVariants = {
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
       
       {/*LOGO*/}
-        <div className="lg:w-fit md:hidden lg:flex relative z-30">
-            <Link href="/" className="text-sm bg-transparent rounded-lg p-1 font-semibold flex items-center justify-center">
+        <div className={`${myfont2.className} lg:w-fit md:hidden lg:flex relative z-30`}>
+            <Link href="/" className="text-xl bg-transparent gap-1 flex items-center justify-center">
                 <span className="">A.</span>
-                <span className="rounded-md bg-red-600 text-white px-1 py-1">Dev</span>
+                <span className="rounded-lg bg-red-600 text-white px-2">Dev</span>
             </Link>
         </div>
 
        {/*MENU*/}
-       <div className="hidden md:flex gap-5 w-1/3">
+       <div className="hidden md:flex gap-5 w-1/3"><ThemeButton/>
       {links.map(link=>(
             <NavLink link = {link} key={link.title}/>
           ))}
-          <ThemeButton/>
       </div>
 
       {/*Social links*/} 

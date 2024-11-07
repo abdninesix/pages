@@ -50,7 +50,7 @@ const ContactPage = () => {
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
       <div className="h-full overflow-auto flex flex-col items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         
-        <div className="h-[180px] lg:h-full lg:w-[500px] p-10 lg:mt-36 flex items-start justify-center text-justify text-3xl md:text-6xl">
+        <div className="h-[180px] lg:h-full lg:w-[500px] p-10 lg:mt-36 flex items-start justify-center text-pretty text-3xl md:text-6xl">
           <div>
             {text.split("").map((letter,index) => (
               <motion.span key={index} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:2, repeat:Infinity, delay:index*0.1}}>{letter}</motion.span>
@@ -70,6 +70,7 @@ const ContactPage = () => {
             {success && <span className="w-fit rounded-md px-1 bg-green-600 text-white text-center">Your message has been sent!</span>}
             {error && <span className="text-red-300 text-center">Something went wrong!</span>}
         </motion.form>
+
       </div>
     </motion.div>
   )
