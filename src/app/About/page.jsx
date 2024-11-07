@@ -42,37 +42,37 @@ const AboutPage = () => {
             <motion.h1 initial={{x:"-500px"}} animate={experienceRefView ? {x:"0"} : {}} className="font-bold text-3xl">EXPERIENCE</motion.h1>
             <motion.div initial={{x:"-500px"}} animate={experienceRefView ? {x:"0"} : {}} transition={{delay:0.2}}>
 
-        {/*LIST ITEM 1*/}       
-        <div className="flex justify-between h-[320px] md:h-48">
+        {/*LIST ITEM 0*/}       
+        <div className="flex justify-between h-fit">
                 <div className="w-1/3 relative"></div>
 
                 <div>
-                  <div className="w-1 h-full md:-left-4 bg-gray-800 dark:bg-gray-200 rounded relative">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full ring-4 ring-red-500 bg-white"></div>
+                  <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
                   </div>
                 </div>
 
                 <div className="w-1/3 relative">
                 <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Fullstack Web</div>
-                  <div className="-mx-2 p-3 text-[11px] md:text-sm">I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time. 🚀</div>
+                  <div className="-mx-3 p-3 text-[11px] md:text-sm">I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time. 🚀</div>
                   <div className="text-sm font-semibold underline">2022-Present</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
                 </div>
 
-              </div>
+          </div>
 
         {/*LIST ITEM 1*/}       
-        <div className="flex justify-between h-[320px] md:h-48">
+        <div className="flex justify-between h-fit">
                 <div className="w-1/3 relative">
                   <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Frontend Web</div>
-                  <div className="-mx-2 p-3 text-[11px] md:text-sm">I&apos;m a frontend dev, crafting responsive, visually appealing interfaces with HTML, CSS, and JavaScript. Every project is a chance to enhance the digital experience and make the web more enjoyable for all. 🎨💻</div>
+                  <div className="-mx-3 p-3 text-[11px] md:text-sm">I&apos;m a frontend dev, crafting responsive, visually appealing interfaces with HTML, CSS, and JavaScript. Every project is a chance to enhance the digital experience and make the web more enjoyable for all. 🎨💻</div>
                   <div className="text-sm font-semibold underline">2022</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
                 </div>
 
                 <div>
-                  <div className="w-1 h-full md:-left-4 bg-gray-800 dark:bg-gray-200 rounded relative">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full ring-4 ring-red-500 bg-white"></div>
+                  <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
                   </div>
                 </div>
 
@@ -81,34 +81,34 @@ const AboutPage = () => {
               </div>
 
         {/*LIST ITEM 2*/}
-              <div className="flex justify-between h-[320px] md:h-48">
+              <div className="flex justify-between h-fit">
                 <div className="w-1/3 relative"></div>
 
                 <div>
-                  <div className="w-1 h-full md:-left-4 bg-gray-800 dark:bg-gray-200 rounded relative">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full ring-4 ring-red-500 bg-white"></div>
+                  <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
                   </div>
                 </div>
 
                 <div className="w-1/3 relative">
                   <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Android Studio</div>
-                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Seasoned Android Studio Java developer with a knack for building user-friendly mobile applications. Expert in Java programming and Android SDK, focused on creating seamless, high-performance apps tailored to user needs.</div>
+                  <div className="-mx-3 p-3 text-[11px] md:text-sm">Seasoned Android Studio Java developer with a knack for building user-friendly mobile applications. Expert in Java programming and Android SDK, focused on creating seamless, high-performance apps tailored to user needs.</div>
                   <div className="text-sm font-semibold underline">2021-2022</div>
                 </div>
 
               </div>
 
         {/*LIST ITEM 3*/}
-              <div className="flex justify-between h-[320px] md:h-48">
+              <div className="flex justify-between h-fit">
                 <div className="w-1/3 relative">
                   <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Visual Studio</div>
-                  <div className="-mx-2 p-3 text-[11px] md:text-sm">Experienced Visual Studio C# developer skilled in crafting robust applications using the .NET framework. Adept at problem-solving, writing clean code, and continuously updating projects to keep up with technological advancements.</div>
+                  <div className="-mx-3 p-3 text-[11px] md:text-sm">Experienced Visual Studio C# developer skilled in crafting robust applications using the .NET framework. Adept at problem-solving, writing clean code, and continuously updating projects to keep up with technological advancements.</div>
                   <div className="text-sm font-semibold underline">2020-2021</div>
                 </div>
 
                 <div>
-                  <div className="w-1 h-full md:-left-4 bg-gray-800 dark:bg-gray-200 rounded relative">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full ring-4 ring-red-500 bg-white"></div>
+                  <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
                   </div>
                 </div>
 

@@ -59,7 +59,7 @@ const ContactPage = () => {
         </div>
 
 
-        <motion.form onSubmit={sendEmail} ref={form} className="shadow-md shadow-gray-800 bg-gray-500 p-4 rounded-2xl h-2/3 w-[350px] lg:h-[550px] md:w-[500px] lg:mt-5 text-lg flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
+        <motion.form onSubmit={sendEmail} ref={form} className="bg-gray-400 dark:bg-gray-500 p-4 rounded-2xl h-2/3 w-[350px] lg:h-[550px] md:w-[500px] lg:mt-5 text-lg flex flex-col gap-5 justify-center" initial={{opacity:0, y:"30vh"}} animate={{opacity:1, y:"0%"}} transition={{delay:1, duration:0.5}}>
             <span>Your message:</span>
             <textarea rows={8} name="user_message" placeholder="Dear Abdullah," className="p-2 rounded-xl bg-gray-200 dark:bg-slate-800 resize-none"/>
             {errors.user_message && <span className="w-fit rounded-md px-1 bg-red-600 text-white">{errors.user_message}</span>}
