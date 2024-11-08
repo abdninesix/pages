@@ -48,7 +48,7 @@ const AboutPage = () => {
 
                 <div>
                   <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-mytheme"></div>
                   </div>
                 </div>
 
@@ -72,7 +72,7 @@ const AboutPage = () => {
 
                 <div>
                   <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-mytheme"></div>
                   </div>
                 </div>
 
@@ -86,7 +86,7 @@ const AboutPage = () => {
 
                 <div>
                   <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-mytheme"></div>
                   </div>
                 </div>
 
@@ -108,7 +108,7 @@ const AboutPage = () => {
 
                 <div>
                   <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
-                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-red-500"></div>
+                    <div className="absolute -left-2 w-5 h-5 rounded-full bg-mytheme"></div>
                   </div>
                 </div>
 

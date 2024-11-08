@@ -11,14 +11,14 @@ const Homepage = () => {
 
     {/*IMAGE CONTAINER*/}
     <motion.div className="flex-none overflow-hidden w-44 h-44 md:w-56 md:h-56 lg:w-[500px] lg:h-[500px] p-2" initial={{y:-150, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.25, delay:1, ease: "easeInOut" }}>
-      <Image src="/hero.png" alt="hero" width={500} height={500} className="h-full w-full rounded-full ring ring-red-600"/>
+      <Image src="/hero.png" alt="hero" width={500} height={500} className="h-full w-full rounded-full"/>
     </motion.div>
 
     {/*TEXT & BUTTON CONTAINER */}
     <div className="h-auto lg:h-full lg:w-1/2 flex flex-col gap-5 lg:gap-10 justify-center text-center lg:text-left">
 
       <div className="flex flex-col gap-6">
-        <h1 className="text-4xl md:text-6xl font-bold z-20 hover:scale-105 duration-300">Meet <span className="text-red-600">Abdullah</span></h1>
+        <h1 className="text-4xl md:text-6xl font-bold z-20 hover:scale-105 duration-300">Meet <span className="text-mytheme">Abdullah</span></h1>
         <h1 className="text-2xl md:text-4xl font-bold z-20 hover:scale-105 duration-300">A&nbsp;
           <span className="p-1 rounded-lg bg-gray-200">
             <span className="text-green-700">M</span>
@@ -32,7 +32,7 @@ const Homepage = () => {
       </div>
       
       <div className="flex gap-4 justify-start">
-        <Link href="/Portfolio" className="bg-red-600 hover:bg-black duration-200 text-white rounded-lg p-2">Check out my work</Link>
+        <Link href="/Portfolio" className="bg-mytheme hover:bg-black duration-200 text-white rounded-lg p-2">Check out my work</Link>
         <Link href="/Contact" className="ring-1 ring-black dark:ring-white hover:ring-2 font-semibold rounded-lg p-2">Work with me</Link>
       </div>
 

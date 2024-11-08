@@ -31,7 +31,7 @@ const bottomVariants = {
   closed:{rotate:0}, opened:{x:10, rotate:-45}
 }
 const listVariants = {
-  closed:{x:50, y:-50}, opened:{x:0, y:0, transition:{staggerChildren:0.25, when:"beforeChildren"}}
+  closed:{x:50, y:-50}, opened:{x:0, y:0, transition:{staggerChildren:0.20, when:"beforeChildren"}}
 }
 const itemVariants = {
   closed:{x:50, y:-50, opacity:0}, opened:{x:0, y:0, opacity:1}
@@ -42,14 +42,14 @@ const itemVariants = {
       
       {/*LOGO*/}
         <div className={`${myfont2.className} lg:w-fit md:hidden lg:flex relative z-30`}>
-            <Link href="/" className="text-xl bg-transparent gap-1 flex items-center justify-center">
-                <span className="">A.</span>
-                <span className="rounded-lg bg-red-600 text-white px-2">Dev</span>
+            <Link href="/" className="text-4xl bg-transparent gap-1 flex items-center justify-center">
+                <span>A;</span>
+                {/*<span className="rounded-lg bg-red-600 text-white px-2">Dev</span>*/}
             </Link>
         </div>
 
        {/*MENU*/}
-       <div className="hidden md:flex gap-5 w-1/3"><ThemeButton/>
+       <div className="hidden md:flex gap-5 w-fit"><ThemeButton/>
       {links.map(link=>(
             <NavLink link = {link} key={link.title}/>
           ))}
@@ -77,7 +77,7 @@ const itemVariants = {
         <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-700 flex flex-col items-center justify-center gap-10 text-4xl font-medium z-10">
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
-              <Link className="p-2 rounded-xl text-gray-700 dark:text-gray-300 ring-red-400 hover:ring-2" href={link.url} >{link.title}</Link>
+              <Link className="p-2 rounded-xl text-gray-700 dark:text-gray-300 ring-mytheme hover:ring-2" href={link.url} >{link.title}</Link>
             </motion.div>            
           ))} <div className="absolute bottom-20"><Socials/></div>
         </motion.div>

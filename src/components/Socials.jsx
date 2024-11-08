@@ -13,9 +13,9 @@ const Socials = () => {
     { href: "", src: "/linkedin.svg", alt: "LinkedIn" } ];
 
   return (
-    <motion.div className="flex flex-row gap-2 justify-center md:justify-end w-fit rounded-lg animate-bounce md:animate-none" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.3, delay:1.5}}>
+    <motion.div className="flex flex-row gap-2 justify-center md:justify-end w-fit rounded-lg" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.3, delay:1.5}}>
           {profiles.map((profile, index) => (
-            <Link key={index} className="h-8 w-8 p-1 rounded-md dark:bg-gray-300" href={profile.href}>
+            <Link key={index} className="h-8 w-8 p-1 rounded-md dark:bg-gray-300 hover:scale-110" href={profile.href}>
               <Image src={profile.src} alt={profile.alt} width={32} height={32}/>
             </Link> ))}
     </motion.div>

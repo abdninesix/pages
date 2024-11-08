@@ -36,10 +36,10 @@ const PortfolioPage = () => {
 
       </div>
 
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gray-300 dark:bg-slate-600">
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gray-300 dark:bg-slate-800">
           <h1 className="text-2xl md:text-4xl lg:text-6xl">Want to have your project done like this?</h1>
           <div className="relative">
-            <svg width="200" height="200" viewBox="0 0 200 200" className="animate-spin-slow">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="currentColor" className="animate-spin-slow">
             <defs>
             <path
             id="circlePath"
@@ -54,7 +54,7 @@ const PortfolioPage = () => {
             </textPath>
             </text>
             </svg>
-            <Link href="/Contact" className="w-28 h-28 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-red-600 ring-red-600 hover:ring-2 text-white shadow-lg text-xl rounded-full flex items-center justify-center">Hire me</Link>
+            <Link href="/Contact" className="w-28 h-28 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-mytheme ring-mytheme hover:ring-2 text-white shadow-lg text-xl rounded-full flex items-center justify-center">Hire me</Link>
           </div>
       </div>
 
