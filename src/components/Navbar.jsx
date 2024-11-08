@@ -13,7 +13,8 @@ const myfont2 = Alex_Brush({ weight: '400', subsets: ['latin'], display: 'swap',
 const links = [
   {url: "/", title:"Home" },
   {url: "/About", title:"About" },
-  {url: "/Portfolio", title:"Portfolio" },
+  {url: "/Portfolio", title:"Projects" },
+  //{url: "/Courses", title:"Courses" },
   {url: "/Contact", title:"Contact" },
 ];
 
@@ -77,7 +78,7 @@ const itemVariants = {
         <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-gray-400 dark:bg-gray-700 flex flex-col items-center justify-center gap-10 text-4xl font-medium z-10">
           {links.map(link=>(
             <motion.div variants={itemVariants} key={link.title}>
-              <Link className="p-2 rounded-xl text-gray-700 dark:text-gray-300 ring-mytheme hover:ring-2" href={link.url} >{link.title}</Link>
+              <Link className="p-2 rounded-xl ring-mytheme hover:ring-2" href={link.url} >{link.title}</Link>
             </motion.div>            
           ))} <div className="absolute bottom-20"><Socials/></div>
         </motion.div>
