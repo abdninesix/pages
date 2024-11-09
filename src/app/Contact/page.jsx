@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser"
 
 const ContactPage = () => {
 
-  const text = "Say hello and let's start with your project;"
+  const text = "Say hello and let's start with your project."
   
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState(false)

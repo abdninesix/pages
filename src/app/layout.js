@@ -6,7 +6,7 @@ const myfont = M_PLUS_Rounded_1c({ weight: '400', subsets: ['latin'], display: '
 
 export async function generateMetadata() {
   return {
-    title: "A; Builds",
+    title: "Abdullah | Portfolio",
     description: "Experience a true responsiveness",
     icons: {
       icon: "/src/app/favicon.ico",

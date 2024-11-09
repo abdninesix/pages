@@ -15,7 +15,7 @@ const Homepage = () => {
     </motion.div>
 
     {/*TEXT & BUTTON CONTAINER */}
-    <div className="h-auto lg:h-full flex flex-col gap-5 lg:gap-10 justify-center text-center lg:text-left">
+    <div className="h-auto lg:h-fit flex flex-col gap-5 lg:gap-10 justify-center text-center lg:text-left">
 
       <div className="flex flex-col gap-6">
         <h1 className="text-4xl md:text-6xl font-bold z-200">Meet <span className="text-mytheme">Abdullah</span></h1>
@@ -28,7 +28,7 @@ const Homepage = () => {
           </span>
           <span>&nbsp;Stack Web Developer</span>
         </h1>
-        <p className="md:text-xl text-left">As a MERN stack developer, he&apos;s all about crafting awesome web apps using MongoDB, Express.js, React, and Node.js. With a CGPA of 3.45, he&apos;s shown he&apos;s got the brains and the talent. He&apos;s got a knack for making interfaces that users love and back-ends that run like a dream. With a solid JavaScript foundation and a flair for design, he&apos;s always up for tackling tricky challenges and boosting performance. Leveraging the MERN stack, he&apos;s all about creating cool, innovative solutions that keep businesses thriving and users happy.</p>
+        <p className="md:text-xl text-left">Hi there! I&apos;m a spirited and dedicated MERN stack developer with a CGPA of 3.45, here to craft vibrant web experiences. From dynamic databases with MongoDB to sleek front-end designs with React, I&apos;ve got all the tools to make your digital dreams a reality. Let&apos;s code something awesome together! 🚀💻</p>
       </div>
       
       <div className="flex gap-4 justify-start">

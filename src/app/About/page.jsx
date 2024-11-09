@@ -9,7 +9,7 @@ const AboutPage = () => {
 
   const skillRef = useRef()
   const skillRefView = useInView(skillRef, {margin:"-80px"})
-  const skills = [ "HTML5", "CSS3", "Javascript", "Typescript", "React.js", "Next.js", "TailwindCSS", "Framer-motion", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma" ];
+  const skills = [ "HTML5", "CSS3", "Javascript", "Typescript", "React.js", "Next.js", "TailwindCSS", "Framer-motion", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma", "Blender", "CAD modeling", "3D Printing", "Visual Studio", "C#", "Android Studio", "Java", "Python" ];
 
   const experienceRef = useRef()
   const experienceRefView = useInView(experienceRef, {margin:"-100px"})
@@ -23,8 +23,8 @@ const AboutPage = () => {
       {/*BIO*/}
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-4xl">BIOGRAPHY</h1>
-            <p className="md:text-xl">I&apos;m a coding whiz who blends tech and creativity. Skilled in Visual Studio and Android Studio, I&apos;ve crafted slick apps and web front-ends. But I&apos;m not just about code, I&apos;m also a 3D whiz with Blender and SolidWorks, turning ideas into reality with 3D printing. Whether it&apos;s designing a new app interface or creating a complex 3D model, I bring a unique blend of technical expertise and artistic flair to my work.</p>
-            <p className="md:text-xl">When I&apos;m not lost in code, you&apos;ll find me experimenting with new design techniques or fine-tuning my latest 3D print. I thrive on solving complex problems and pushing the boundaries of what&apos;s possible, always with an eye for detail and a passion for perfection. Whether I&apos;m coding up a storm or designing futuristic prototypes, I bring passion and precision to every project, making tech both fun and functional.</p>
+            <p className="md:text-xl">In my journey as a tech enthusiast, I&apos;ve had the privilege of diving deep into various tools and technologies that shape our digital world. My experience spans across Visual Studio, where I&apos;ve honed my skills in developing robust software solutions, and Android Studio, which has enabled me to create engaging and user-friendly mobile applications. These platforms have been instrumental in my growth as a versatile developer, allowing me to bring innovative ideas to life and solve complex problems with ease.</p>
+            <p className="md:text-xl">Beyond the realm of software development, I have explored the fascinating world of 3D design and manufacturing. Using Blender and CAD modeling, I&apos;ve created intricate and detailed models that serve both artistic and practical purposes. My expertise in 3D printing has brought these designs into the physical world, offering tangible solutions and creative expressions. This blend of digital and physical creation has not only expanded my technical skill set but also fueled my passion for continuous learning and pushing the boundaries of what technology can achieve.</p>
             <Arrow/>
           </div>
           
@@ -45,7 +45,7 @@ const AboutPage = () => {
 
         {/*LIST ITEM 0*/}       
         <div className="flex justify-between h-fit">
-                <div className="w-1/3 relative"></div>
+                <div className="w-5/12 relative"></div>
 
                 <div>
                   <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
@@ -53,8 +53,8 @@ const AboutPage = () => {
                   </div>
                 </div>
 
-                <div className="w-1/3 relative">
-                <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Fullstack Web</div>
+                <div className="w-5/12 relative">
+                <div className="shadow-lg p-2 md:p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Fullstack Web</div>
                   <div className="-mx-3 p-3 text-[11px] md:text-sm">I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time. 🚀</div>
                   <div className="text-sm font-semibold underline">2022-Present</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
@@ -64,8 +64,8 @@ const AboutPage = () => {
 
         {/*LIST ITEM 1*/}       
         <div className="flex justify-between h-fit">
-                <div className="w-1/3 relative">
-                  <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Frontend Web</div>
+                <div className="w-5/12 relative">
+                  <div className="shadow-lg p-2 md:p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Frontend Web</div>
                   <div className="-mx-3 p-3 text-[11px] md:text-sm">I&apos;m a frontend dev, crafting responsive, visually appealing interfaces with HTML, CSS, and JavaScript. Every project is a chance to enhance the digital experience and make the web more enjoyable for all. 🎨💻</div>
                   <div className="text-sm font-semibold underline">2022</div>
                   {/*<div className="p-3 bg-white text-sm font-semibold rounded-md text-center w-fit">No company</div>*/}
@@ -77,13 +77,13 @@ const AboutPage = () => {
                   </div>
                 </div>
 
-                <div className="w-1/3 relative"></div>
+                <div className="w-5/12 relative"></div>
 
               </div>
 
         {/*LIST ITEM 2*/}
               <div className="flex justify-between h-fit">
-                <div className="w-1/3 relative"></div>
+                <div className="w-5/12 relative"></div>
 
                 <div>
                   <div className="relative w-1 h-full bg-gray-800 dark:bg-gray-200">
@@ -91,8 +91,8 @@ const AboutPage = () => {
                   </div>
                 </div>
 
-                <div className="w-1/3 relative">
-                  <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Android Studio</div>
+                <div className="w-5/12 relative">
+                  <div className="shadow-lg p-2 md:p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Android Studio</div>
                   <div className="-mx-3 p-3 text-[11px] md:text-sm">Seasoned Android Studio Java developer with a knack for building user-friendly mobile applications. Expert in Java programming and Android SDK, focused on creating seamless, high-performance apps tailored to user needs.</div>
                   <div className="text-sm font-semibold underline">2021-2022</div>
                 </div>
@@ -101,8 +101,8 @@ const AboutPage = () => {
 
         {/*LIST ITEM 3*/}
               <div className="flex justify-between h-fit">
-                <div className="w-1/3 relative">
-                  <div className="shadow-lg p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Visual Studio</div>
+                <div className="w-5/12 relative">
+                  <div className="shadow-lg p-2 md:p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">Visual Studio</div>
                   <div className="-mx-3 p-3 text-[11px] md:text-sm">Experienced Visual Studio C# developer skilled in crafting robust applications using the .NET framework. Adept at problem-solving, writing clean code, and continuously updating projects to keep up with technological advancements.</div>
                   <div className="text-sm font-semibold underline">2020-2021</div>
                 </div>
@@ -113,7 +113,7 @@ const AboutPage = () => {
                   </div>
                 </div>
 
-                <div className="w-1/3 relative"></div>
+                <div className="w-5/12 relative"></div>
 
               </div>
               
