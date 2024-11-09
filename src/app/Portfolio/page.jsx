@@ -20,7 +20,8 @@ const PortfolioPage = () => {
         <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center  text-6xl md:text-8xl text-center">My work<Arrow/></div>
       
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
-          <motion.div style={{x}} className="flex"> <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-slate-200 to-green-400"/>
+          <motion.div style={{x}} className="flex">
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-slate-200 to-green-400"/>
           {items.map((item) => (
             <div className={`h-screen w-screen flex items-center justify-center p-8 bg-gradient-to-r ${item.color}`} key={item.id}>
               <div className="flex flex-col gap-8 p-10 h-full rounded-2xl text-white">
