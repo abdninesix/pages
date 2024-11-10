@@ -1,12 +1,16 @@
 "use client"
 
+import ImageSlider from "@/components/ImageSlider";
 import { motion } from "framer-motion";
 import React from 'react'
 
 const CoursesPage = () => {
+
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full text-4xl flex items-center justify-center">Coming soon</div>
+        <div className="h-full overflow-auto flex flex-col items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4">
+        Coming soon
+        </div>
     </motion.div>
   )
 }
