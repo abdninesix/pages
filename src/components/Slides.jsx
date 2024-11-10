@@ -3,7 +3,7 @@ import React from "react"
 const slides = [
     {
         src: "/swipe.png",
-        title:"Swipe to see my work",
+        title:"Swipe to see my the projects",
         desc: "Responsive design, ensures a seamless user experience across all devices. User-Friendly Interface with easy navigation and intuitive layouts. High performance with fast load times and optimized performance. Secure and robust security features to protect user data. Engaging Content having rich, relevant content that keeps users engaged.",
     },
     {

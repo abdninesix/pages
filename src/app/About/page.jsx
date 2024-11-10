@@ -7,8 +7,8 @@ import Arrow from "@/components/Arrow";
 
 const Line = () => {
   return (
-    <div>
-      <div className="relative w-1 mt-6 h-full bg-gray-800 dark:bg-gray-200">
+    <div className="z-5">
+      <div className="relative w-1 mt-6 h-full bg-gray-600 dark:bg-gray-300">
         <div className="absolute -left-2.5 w-6 h-6 rounded-full bg-mytheme"></div>
       </div>
     </div>
@@ -17,11 +17,11 @@ const Line = () => {
 
 const InfoCard = ({ title, description, date }) => {
   return (
-    <div className="w-5/12 relative bg-gray-300 dark:bg-slate-900 hover:scale-105 p-4 rounded-2xl duration-200">
+    <div className="w-5/12 relative bg-gray-300 dark:bg-slate-900 hover:scale-105 shadow-lg p-4 rounded-2xl duration-200 z-10">
       <div className="shadow-lg p-2 md:p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">
         {title}
       </div>
-      <div className="-mx-3 p-3 text-[11px] md:text-sm">
+      <div className="-mx-3 p-3 text-[12px] md:text-sm">
         {description}
       </div>
       <div className="text-sm font-semibold underline">
@@ -52,7 +52,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-4xl">BIOGRAPHY</h1>
             <p className="md:text-xl">In my journey as a tech enthusiast, I&apos;ve had the privilege of diving deep into various tools and technologies that shape our digital world. My experience spans across Visual Studio, where I&apos;ve honed my skills in developing robust software solutions, and Android Studio, which has enabled me to create engaging and user-friendly mobile applications. These platforms have been instrumental in my growth as a versatile developer, allowing me to bring innovative ideas to life and solve complex problems with ease.</p>
-            <p className="md:text-xl">Beyond the realm of software development, I have explored the fascinating world of 3D design and manufacturing. Using Blender and CAD modeling, I&apos;ve created intricate and detailed models that serve both artistic and practical purposes. My expertise in 3D printing has brought these designs into the physical world, offering tangible solutions and creative expressions. This blend of digital and physical creation has not only expanded my technical skill set but also fueled my passion for continuous learning and pushing the boundaries of what technology can achieve.</p>
+            <p className="md:text-xl">Beyond the realm of software development, I have explored the fascinating world of 3D design and manufacturing. Using CAD modeling, I&apos;ve developed intricate and detailed models that serve both artistic and practical purposes. My expertise in 3D printing has brought these designs into the physical world, offering tangible solutions and creative expressions. This blend of digital and physical creation has not only expanded my technical skill set but also fueled my passion for continuous learning of what technology can achieve.</p>
             <Arrow/>
           </div>
           

@@ -9,7 +9,7 @@ import slides from './Slides';
 const Slides = ({src, alt, title, desc}) => {
   return (
     <div className="h-screen flex backdrop-blur-lg p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-      <div className='w-full h-[600px] flex flex-col lg:justify-between p-10 gap-8 rounded-2xl bg-gray-300 dark:bg-slate-900'>
+      <div className='w-full h-[600px] flex flex-col lg:justify-between p-6 gap-8 rounded-2xl shadow-lg bg-gray-300 dark:bg-slate-900'>
         <div className='h-24 w-fit flex flex-col justify-center gap-4'>
           <h1 className="text-4xl lg:text-6xl">{title}</h1>
         </div>
@@ -19,7 +19,7 @@ const Slides = ({src, alt, title, desc}) => {
             alt="img"
             height={256}
             width={256}
-            className="block w-fit lg:w-2/3 h-fit object-cover rounded-2xl shadow-xl"
+            className="block w-fit lg:w-2/3 h-fit object-cover rounded-2xl"
           />
           <p className="w-fit lg:w-1/3 lg:text-xl">{desc}</p>
         </div>    
