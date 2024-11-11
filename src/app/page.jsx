@@ -34,8 +34,8 @@ const Homepage = () => {
       </div>
       
       <div className="flex gap-4 justify-start">
-        <Link href="/Portfolio" className="bg-mytheme hover:bg-black duration-200 text-white rounded-lg p-2">Check out my work</Link>
-        <Link href="/Contact" className="ring-1 ring-black dark:ring-white hover:ring-2 font-semibold rounded-lg p-2">Work with me</Link>
+        <Link href="/Portfolio" className="bg-mytheme hover:bg-black duration-200 text-white rounded-md p-2">Check out my work</Link>
+        <Link href="/Contact" className="ring-1 ring-black dark:ring-white hover:ring-2 font-semibold rounded-md p-2">Work with me</Link>
       </div>
 
     </div>

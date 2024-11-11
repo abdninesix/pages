@@ -8,7 +8,7 @@ const NavLink = ({link}) => {
     const pathName = usePathname()
 
   return (
-    <Link className={`text-lg rounded-lg p-1 hover:bg-mytheme hover:text-white ${pathName===link.url && "bg-mytheme text-white"}`} href={link.url}>{link.title}</Link>
+    <Link className={`text-lg rounded-md p-1 hover:bg-mytheme hover:text-white ${pathName===link.url && "bg-mytheme text-white"}`} href={link.url}>{link.title}</Link>
   )
 }
 

@@ -59,20 +59,20 @@ const ContactPage = () => {
             ))}
           </div>
 
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex p-2 rounded-xl dark:bg-gray-400">
             <Image src="/handshake.svg" alt="" width={256} height={256}/>
           </div>
         </div>
 
 
-        <motion.form onSubmit={sendEmail} ref={form} className="bg-gray-400 p-4 shadow-lg rounded-2xl h-2/3 w-[350px] md:w-[500px] lg:h-[550px] lg:mt-5 text-lg flex flex-col gap-5 justify-center" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1, duration:0.5}}>
+        <motion.form onSubmit={sendEmail} ref={form} className="bg-gray-400 p-4 shadow-lg rounded-2xl h-2/3 w-[350px] md:w-[500px] lg:h-[550px] lg:mt-5 text-lg flex flex-col gap-5 justify-center" initial={{opacity:0, y:50}} animate={{opacity:1, y:0}} transition={{delay:1, duration:0.25}}>
             <span>Your message:</span>
             <textarea rows={8} name="user_message" placeholder="Dear Abdullah," className="p-2 rounded-xl bg-gray-200 dark:bg-slate-800 resize-none"/>
             {errors.user_message && <span className="w-fit rounded-md px-1 bg-red-600 text-white">{errors.user_message}</span>}
             <span>Your email:</span>
             <input name="user_email" type="text" placeholder="something@somthing.com" className="p-2 rounded-xl bg-gray-200 dark:bg-slate-800 resize-none"/>
             {errors.user_email && <span className="w-fit rounded-md px-1 bg-red-600 text-white">{errors.user_email}</span>}
-            <button className="bg-gray-700 hover:bg-mytheme text-white rounded-lg p-2 mt-3 w-fit">Send</button>
+            <button className="bg-gray-700 hover:bg-mytheme text-white rounded-md p-2 mt-3 w-fit">Send</button>
             {success && <span className="w-fit rounded-md px-1 bg-green-600 text-white text-center">Your message has been sent!</span>}
             {error && <span className="text-red-300 text-center">Something went wrong!</span>}
         </motion.form>

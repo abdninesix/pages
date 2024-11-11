@@ -9,11 +9,12 @@ import slides from './Slides';
 const Slides = ({src, alt, title, desc}) => {
   return (
     <div className="h-screen flex backdrop-blur-lg p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-      <div className='w-full h-[600px] flex flex-col lg:justify-between p-6 gap-8 rounded-2xl shadow-lg bg-gray-300 dark:bg-slate-900'>
+      <div className='w-full h-[600px] flex flex-col lg:justify-between p-6 gap-8 rounded-2xl shadow-lg bg-gray-300 dark:bg-slate-900 duration-300'>
         <div className='h-24 w-fit flex flex-col justify-center gap-4'>
           <h1 className="text-4xl lg:text-6xl">{title}</h1>
         </div>
         <div className='h-full relative lg:w-full flex flex-col lg:flex-row gap-8'>
+
           <img
             src={src}
             alt="img"
@@ -21,7 +22,11 @@ const Slides = ({src, alt, title, desc}) => {
             width={256}
             className="block w-fit lg:w-2/3 h-fit object-cover rounded-2xl"
           />
-          <p className="w-fit lg:w-1/3 lg:text-xl">{desc}</p>
+          <div className="w-fit lg:w-1/3 lg:text-xl">
+            <h1 className='lg:text-xl font-semibold'>Description:</h1>
+            <p className="lg:text-xl">{desc}</p>
+          </div>
+          
         </div>    
       </div>
     </div>
