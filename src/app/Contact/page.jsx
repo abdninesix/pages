@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser"
 import Image from "next/image";
+import Handshake from "@/components/handshake";
 
 const ContactPage = () => {
 
@@ -59,8 +60,8 @@ const ContactPage = () => {
             ))}
           </div>
 
-          <div className="hidden lg:flex p-2 rounded-xl dark:bg-gray-400">
-            <Image src="/handshake.svg" alt="" width={256} height={256}/>
+          <div className="hidden lg:flex p-2 rounded-xl text-black dark:text-gray-300">
+            <Handshake/>
           </div>
         </div>
 

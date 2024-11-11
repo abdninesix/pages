@@ -8,7 +8,7 @@ import Arrow from "@/components/Arrow";
 const Line = () => {
   return (
     <div className="z-5">
-      <div className="relative w-1 mt-6 h-full bg-gray-600 dark:bg-gray-300">
+      <div className="relative w-1 mt-2 h-full bg-gray-600 dark:bg-gray-300">
         <div className="absolute -left-2.5 w-6 h-6 rounded-full bg-mytheme"></div>
       </div>
     </div>
@@ -17,7 +17,7 @@ const Line = () => {
 
 const InfoCard = ({ title, description, date }) => {
   return (
-    <div className="w-5/12 relative bg-gray-300 dark:bg-slate-900 hover:scale-105 shadow-lg p-4 rounded-2xl duration-200 z-10">
+    <div className="w-5/12 relative bg-gray-300 dark:bg-slate-900 hover:border-b-4 hover:scale-105 shadow-lg p-4 rounded-2xl duration-200 z-10">
       <div className="shadow-lg p-2 md:p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">
         {title}
       </div>
