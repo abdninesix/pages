@@ -33,8 +33,9 @@ const Homepage = () => {
         <p className="md:text-xl text-left">Hi there! I&apos;m a spirited and dedicated MERN stack developer with a CGPA of 3.45, here to craft vibrant web experiences. From dynamic databases with MongoDB to sleek front-end designs with React, I&apos;ve got all the tools to make your digital dreams a reality. Let&apos;s code something awesome together! 🚀💻</p>
       </div>
       
-      <div className="flex gap-4 justify-start">
-        <Link href="/Portfolio" className="bg-mytheme hover:bg-black duration-200 text-white rounded-md p-2">Check out my work</Link>
+      <div className="flex gap-3 lg:gap-4 justify-start">
+        <Link href="/About" className="bg-mytheme hover:bg-black text-white rounded-md p-2">Learn more</Link>
+        <Link href="/Portfolio" className="bg-mytheme hover:bg-black text-white rounded-md p-2">Check my work</Link>
         <Link href="/Contact" className="ring-1 ring-black dark:ring-white hover:ring-2 font-semibold rounded-md p-2">Work with me</Link>
       </div>
 
