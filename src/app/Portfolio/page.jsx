@@ -3,17 +3,21 @@
 import { motion } from "framer-motion";
 import ImageSlider from "@/components/ImageSlider";
 import Link from "next/link";
+import Arrow from "@/components/Arrow";
 
 const PortfolioPage = () => {
 
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-     <div className="h-full overflow-auto flex flex-col items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4">
+
+      <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-6xl md:text-8xl text-center">My work<Arrow/></div>
+
+      <div className="h-full overflow-auto flex flex-col bg-gray-200 dark:bg-slate-800 items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4">
         <ImageSlider/>
       </div>
 
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gray-200 dark:bg-slate-800">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl">Want to have your project done like this?</h1>
+      <div className="h-full flex flex-col gap-16 items-center justify-center text-center bg-gray-200 dark:bg-slate-800 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+          <h1 className="text-4xl lg:text-6xl">Want to have your project done like this?</h1>
           <div className="relative">
             <svg width="200" height="200" viewBox="0 0 200 200" fill="currentColor" className="animate-spin-slow">
             <defs>
