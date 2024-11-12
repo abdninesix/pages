@@ -3,8 +3,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser"
-import Image from "next/image";
-import Handshake from "@/components/handshake";
+import Handshake from "@/components/Handshake";
 
 const ContactPage = () => {
 
