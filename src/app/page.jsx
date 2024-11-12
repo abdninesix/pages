@@ -17,7 +17,7 @@ const Homepage = () => {
     {/*TEXT & BUTTON CONTAINER */}
     <div className="h-auto lg:h-fit flex flex-col gap-5 lg:gap-10 justify-center text-center lg:text-left">
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 lg:gap-6">
         <h1 className="text-4xl md:text-6xl font-bold z-200">Meet <span className="text-mytheme">Abdullah</span></h1>
         <h1 className="text-2xl md:text-4xl font-bold z-20 hover:scale-105 duration-300 relative group">A&nbsp;
           <span className="p-1 rounded-lg bg-gray-200">

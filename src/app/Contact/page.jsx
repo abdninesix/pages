@@ -59,7 +59,7 @@ const ContactPage = () => {
             ))}
           </div>
 
-          <div className="hidden lg:flex p-2 rounded-xl text-black dark:text-gray-300">
+          <div className="hidden lg:flex rounded-xl text-gray-800 dark:text-gray-300">
             <Handshake/>
           </div>
         </div>
