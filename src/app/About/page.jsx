@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Arrow from "@/components/Arrow";
@@ -72,17 +71,27 @@ const AboutPage = () => {
             <motion.h1 initial={{x:"-500px"}} animate={experienceRefView ? {x:"0"} : {}} className="font-bold text-3xl">EXPERIENCE</motion.h1>
             <motion.div initial={{x:"-500px"}} animate={experienceRefView ? {x:"0"} : {}} transition={{delay:0.2}}>
 
-        {/*LIST ITEM 0*/}       
+        {/*LIST ITEM 5*/}       
+        <div className="flex justify-between h-fit">
+                <InfoCard
+                title="Next.js Web"
+                description="I&apos;m a Next.js developer, proficient in building high-performance, server-rendered web applications. With a good foundation in the MERN stack—MongoDB, Express, React, and Node.js. I&apos;m eager to craft seamless, user-friendly digital experiences. Every line of code I write aims to elevate the web."
+                date="2022-Present"/>
+                <Line/>
+                <div className="w-5/12 relative"></div>
+          </div>
+
+        {/*LIST ITEM 4*/}       
         <div className="flex justify-between h-fit">
                 <div className="w-5/12 relative"></div>
                 <Line/>
                 <InfoCard
-                  title="Fullstack Web"
+                  title="MERN Stack Web"
                   description="I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time. 🚀"
                   date="2022-Present"/>
           </div>
 
-        {/*LIST ITEM 1*/}       
+        {/*LIST ITEM 3*/}       
         <div className="flex justify-between h-fit">
                 <InfoCard
                 title="Frontend Web"
@@ -102,7 +111,7 @@ const AboutPage = () => {
                 date="2021-2022"/>
            </div>
 
-        {/*LIST ITEM 3*/}
+        {/*LIST ITEM 1*/}
          <div className="flex justify-between h-fit">
                 <InfoCard
                 title="Visual Studio"

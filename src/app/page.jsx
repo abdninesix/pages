@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -19,7 +20,7 @@ const Homepage = () => {
 
       <div className="flex flex-col gap-4 lg:gap-6">
         <h1 className="text-4xl md:text-6xl font-bold z-200">Meet <span className="text-mytheme">Abdullah</span></h1>
-        <h1 className="text-2xl md:text-4xl font-bold z-20 hover:scale-105 duration-300 relative group">A&nbsp;
+        <h1 className="text-2xl md:text-4xl font-bold z-20 hover:scale-105 duration-200 relative group">A NEXT.js &&nbsp;
           <span className="p-1 rounded-lg bg-gray-200">
             <span className="text-green-700">M</span>
             <span className="text-gray-800">E</span>
@@ -27,7 +28,7 @@ const Homepage = () => {
             <span className="text-green-500">N</span>
           </span>
           <span>&nbsp;Stack Web Developer</span>
-          <Image src="/mern.png" alt="MERN" height={256} width={256} className="h-14 w-auto absolute -top-3 left-[500px] transform opacity-0 lg:group-hover:opacity-100 duration-300"/>
+          <Image src="/mern.png" alt="MERN" height={256} width={256} className="h-14 w-fit absolute -top-3 left-[680px] transform opacity-0 lg:group-hover:opacity-100 duration-300"/>
         </h1>
         
         <p className="md:text-xl text-left">Hi there! I&apos;m a spirited and dedicated MERN stack developer with a CGPA of 3.45, here to craft vibrant web experiences. From dynamic databases with MongoDB to sleek front-end designs with React, I&apos;ve got all the tools to make your digital dreams a reality. Let&apos;s code something awesome together! 🚀💻</p>

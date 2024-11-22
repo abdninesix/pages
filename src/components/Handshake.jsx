@@ -3,7 +3,7 @@ import React from 'react'
 const Handshake = () => {
   return (
     <div>
-        <svg width="300px" height="300px" viewBox="0 0 512 512" fill="currentColor">
+        <svg width="450px" height="450px" viewBox="0 0 512 512" fill="currentColor">
         <g>
 	<path d="M255.366,141.046c-7.4,3.583-14.732,8.548-21.533,15.357c-34.091,34.098-65.081,65.088-65.081,65.088
 		l0.013,0.02c-0.185,0.186-0.371,0.338-0.557,0.53c-8.824,8.831-9.174,22.909-1.025,32.146c0.323,0.371,0.668,0.736,1.025,1.086
