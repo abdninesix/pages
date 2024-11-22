@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Arrow from "@/components/Arrow";
+import AnimatedCover from "@/components/AnimatedCover";
 
 const Line = () => {
   return (
@@ -44,10 +45,10 @@ const AboutPage = () => {
 
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full overflow-scroll lg:flex">
+      <div className="h-full overflow-scroll lg:flex pl-4 sm:pl-8 md:pl-12 lg:pl-20 xl:pl-48 gap-10">
 
       {/*TEXT CONTAINER*/}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-20 flex flex-col gap-48 md:gap-56 lg:gap-36 xl:gap-64 lg:pr-0 lg:w-2/3 xl:1/2">
+        <div className="mt-20 flex flex-col gap-48 md:gap-56 lg:gap-36 xl:gap-64 lg:w-3/5">
       {/*BIO*/}
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-4xl">BIOGRAPHY</h1>
@@ -118,9 +119,10 @@ const AboutPage = () => {
         </div>
     
         {/*IMAGE CONTAINER*/}
-        <motion.div className="hidden h-[640px] lg:flex items-center justify-center w-1/3 xl:w-1/2 sticky top-5 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
-          <Image src='/about.png' alt="cover" height={512} width={512} className="rounded-tl-[200px] rounded-bl-[200px] h-full w-full"/>
-        </motion.div>
+        <div className="hidden overflow-hidden h-[640px] lg:flex items-center justify-center w-2/5 sticky top-5 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:1, ease: "easeInOut" }}>
+          <AnimatedCover/>
+          {/*<Image src='/about.png' alt="cover" height={512} width={512} className="rounded-tl-[200px] rounded-bl-[200px] h-full w-full"/>*/}
+        </div>
         
       </div>
     </motion.div>
