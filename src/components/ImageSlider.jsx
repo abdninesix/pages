@@ -7,7 +7,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const Slides = ({ src, alt, title, desc }) => {
   return (
-    <div className="h-[800px] lg:h-[700px] flex backdrop-blur-lg p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="h-[800px] lg:h-[700px] flex backdrop-blur-md p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       <div className='w-screen h-[700px] lg:h-[600px] flex flex-col lg:justify-between p-6 gap-8 rounded-2xl bg-gray-300 dark:bg-slate-900 duration-200'>
 
         <div className='h-20 w-fit flex flex-col justify-center gap-4'>

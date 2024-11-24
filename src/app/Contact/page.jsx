@@ -7,7 +7,7 @@ import Handshake from "@/components/Handshake";
 
 const ContactPage = () => {
 
-  const text = "Say hello and let's start with your project;"
+  const text = "Say hello to begin;"
   
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState(false)
@@ -50,12 +50,12 @@ const ContactPage = () => {
 
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full overflow-auto flex flex-col items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full overflow-hidden flex flex-col items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         
-        <div className="lg:w-[500px] p-10 flex flex-col gap-10 items-center justify-center text-3xl md:text-6xl">
-          <div className="flex lg:hidden">
+        <div className="lg:w-1/2 h-1/5 lg:h-full flex flex-col gap-10 items-center justify-center text-3xl md:text-6xl">
+          <div className="flex flex-wrap">
             {text.split("").map((letter,index) => (
-              <motion.span key={index} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:1, repeat:Infinity, delay:index*0.1}}>{letter}</motion.span>
+              <motion.span key={index} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:1, repeat:Infinity, delay:index*0.1}}>{letter === " " ? "\u00A0" : letter}</motion.span>
             ))}
           </div>
 
@@ -65,7 +65,7 @@ const ContactPage = () => {
         </div>
 
 
-        <motion.form onSubmit={sendEmail} ref={form} className="p-4 shadow-2xl rounded-2xl h-2/3 w-[350px] md:w-[500px] lg:h-[550px] lg:mt-5 text-lg flex flex-col gap-5 justify-center" initial={{opacity:0, y:50}} animate={{opacity:1, y:0}} transition={{delay:1, duration:0.25}}>
+        <motion.form onSubmit={sendEmail} ref={form} className="p-4 shadow-2xl rounded-2xl h-2/3 w-[350px] md:w-1/2 lg:h-[550px] lg:mt-5 text-lg flex flex-col gap-5 justify-center" initial={{opacity:0, y:50}} animate={{opacity:1, y:0}} transition={{delay:1, duration:0.25}}>
             <span>Your message:</span>
             <textarea rows={8} name="user_message" placeholder="Dear Abdullah," className="p-2 rounded-xl duration-200 bg-gray-200 dark:bg-slate-800 resize-none"/>
             {errors.user_message && <span className="w-fit rounded-md px-1 bg-red-600 text-white">{errors.user_message}</span>}
