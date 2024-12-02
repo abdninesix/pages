@@ -52,7 +52,7 @@ const itemVariants = {
        {/*MENU*/}
        <div className="hidden md:flex gap-5 w-fit"><ThemeButton/>
       {links.map(link=>(
-            <NavLink link = {link} key={link.title}/>
+            <NavLink link={link} key={link.title}/>
           ))}
       </div>
 
