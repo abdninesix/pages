@@ -17,7 +17,7 @@ const PortfolioPage = () => {
         <ImageSlider slides={project1}/>
 
         <div className="h-screen flex flex-col gap-16 items-center justify-center text-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-          <h1 className="text-4xl lg:text-6xl ">Want to have your project done like this?</h1>
+          <h1 className="text-4xl">Want to have your project done like this?</h1>
           <div className="relative">
             {/*<svg width="200" height="200" viewBox="0 0 200 200" fill="currentColor" className="animate-spin-slow">
             <defs>
@@ -35,7 +35,7 @@ const PortfolioPage = () => {
             </text>
             </svg>
             <Link href="/Contact" className="w-28 h-28 *absolute top-0 left-0 right-0 bottom-0 m-auto bg-mytheme ring-mytheme hover:ring-2 text-white shadow-lg text-xl rounded-full flex items-center justify-center">Hire me</Link>*/}
-            <Link href="/Contact" className="bg-mytheme hover:bg-black text-white rounded-md p-2">Hire me</Link>
+            <Link href="/Contact" className="bg-mytheme hover:bg-black text-white rounded-md p-2">Let's work</Link>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const Arrow = () => {
                 viewBox="0 0 24 24"
                 width="40"
                 height="40"
-                className="animate-bounce dark:fill-white">
+                className="animate-bounce fill-gray-800 dark:fill-white">
                 <path d="M12 16l-6-6h12z" />
               </svg>
             </div>

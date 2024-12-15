@@ -4,6 +4,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Image from 'next/image';
 
 const Slides = ({ src, alt, title, desc }) => {
   return (
@@ -15,7 +16,7 @@ const Slides = ({ src, alt, title, desc }) => {
         </div>
 
         <div className='h-full relative lg:w-full flex flex-col lg:flex-row gap-8'>
-          <img
+          <Image
             src={src}
             alt={alt}
             height={256}

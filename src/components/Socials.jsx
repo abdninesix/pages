@@ -73,7 +73,7 @@ const Socials = () => {
   const profiles = [
     //{ href: "https://www.behance.net/abdninesix", icon: <Behance/>, alt: "Behance" },
     { href: "https://github.com/abdninesix", icon: <Github/>, alt: "GitHub" },
-    { href: "https://www.freelancer.com/u/abdninesix", icon: <Freelancer/>, alt: "Freelancer" },
+    //{ href: "https://www.freelancer.com/u/abdninesix", icon: <Freelancer/>, alt: "Freelancer" },
     //{ href: "https://www.upwork.com/freelancers/~0194244346098915a5", icon: <Upwork/>, alt: "Upwork" },
     { href: "https://www.linkedin.com/in/muhammad-abdullah-4065b7339/", icon: <Linkedin/>, alt: "LinkedIn" } 
   ];
@@ -81,7 +81,7 @@ const Socials = () => {
   return (
     <motion.div className="flex flex-row gap-2 justify-center md:justify-end w-fit rounded-lg" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.3, delay:1.5}}>
           {profiles.map((profile, index) => (
-            <Link key={index} className="h-9 w-9 p-1 text-gray-900 dark:text-gray-200 hover:scale-110 duration-200" href={profile.href}>
+            <Link key={index} className="h-9 w-9 p-1 text-gray-900 dark:text-gray-200 hover:scale-105" href={profile.href}>
               {profile.icon}
             </Link> ))}
     </motion.div>
