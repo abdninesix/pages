@@ -44,7 +44,7 @@ const AboutPage = () => {
 
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full overflow-scroll overflow-x-hidden  lg:flex pl-4 sm:pl-8 md:pl-12 lg:pl-20 xl:pl-48 gap-10">
+      <div className="h-full overflow-scroll overflow-x-hidden lg:flex p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-10">
 
       {/*TEXT CONTAINER*/}
         <div className="mt-20 flex flex-col gap-48 md:gap-56 lg:gap-36 xl:gap-64 lg:w-3/5">
@@ -128,7 +128,7 @@ const AboutPage = () => {
         </div>
     
         {/*IMAGE CONTAINER*/}
-        <motion.div className="hidden overflow-hidden h-[640px] lg:flex items-center justify-center w-2/5 sticky top-5 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:3, ease: "easeInOut" }}>
+        <motion.div className="hidden overflow-hidden h-[640px] lg:flex items-center duration-200 filter hover:blur-0 blur-sm justify-center w-2/5 sticky top-5 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:3, ease: "easeInOut" }}>
           <AnimatedCover/>
           {/*<Image src='/about.png' alt="cover" height={512} width={512} className="rounded-tl-[200px] rounded-bl-[200px] h-full w-full"/>*/}
         </motion.div>

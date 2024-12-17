@@ -1,8 +1,8 @@
-import { M_PLUS_Rounded_1c } from "next/font/google";
+import { Monda } from "next/font/google";
 import "./globals.css";
 import TransitionProvider from "@/components/TransitionProvider";
 
-const myfont = M_PLUS_Rounded_1c({ weight: '400', subsets: ['latin'], display: 'swap', });
+const myfont = Monda({ weight: '400', subsets: ['latin'], display: 'swap', });
 
 export async function generateMetadata() {
   return {
