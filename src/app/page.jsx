@@ -12,7 +12,7 @@ const Homepage = () => {
 
     {/*IMAGE CONTAINER*/}
     <motion.div className="flex-none w-44 h-44 md:w-56 md:h-56 lg:w-[380px] lg:h-[380px] p-2" initial={{y:-50, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.25, delay:1.5, ease: "easeInOut" }}>
-      <Image src="/about.png" alt="hero" width={500} height={500} className="h-full w-full rounded-full md:hover:rounded-tr-none md:hover:rounded-br-none duration-200"/>
+      <Image src="/about.png" alt="hero" width={500} height={500} className="h-full w-full border-4 rounded-full md:hover:rounded-tr-none md:hover:rounded-br-none duration-200"/>
     </motion.div>
 
     {/*TEXT & BUTTON CONTAINER */}
@@ -21,8 +21,8 @@ const Homepage = () => {
       <div className="flex flex-col gap-4 lg:gap-6">
         <h1 className="text-4xl md:text-6xl font-bold z-200">Meet <span className="text-mytheme">Abdullah</span></h1>
         <h1 className="text-2xl md:text-4xl font-bold z-20 hover:scale-105 duration-200 relative group">A&nbsp;
-          <span className="p-x1 rounded-lg bg-gray-200 dark:text-gray-800">NEXT.js</span>&nbsp;&&nbsp;
-          <span className="p-x1 rounded-lg bg-gray-200">
+          <span className="p-1 rounded-lg bg-gray-200 dark:text-gray-800">NEXT.js</span>&nbsp;&&nbsp;
+          <span className="p-1 rounded-lg bg-gray-200">
             <span className="text-green-700">M</span>
             <span className="text-gray-800">E</span>
             <span className="text-cyan-600">R</span>

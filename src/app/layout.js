@@ -1,8 +1,8 @@
-import { Monda } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.css";
 import TransitionProvider from "@/components/TransitionProvider";
 
-const myfont = Monda({ weight: '400', subsets: ['latin'], display: 'swap', });
+const myfont = Barlow({ weight: '400', subsets: ['latin'], display: 'swap', });
 
 export async function generateMetadata() {
   return {
