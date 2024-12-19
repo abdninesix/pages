@@ -9,7 +9,7 @@ const Line = () => {
   return (
     <div className="z-5">
       <div className="relative w-1 mt-2 h-full bg-gray-600 dark:bg-gray-300">
-        <div className="absolute -left-2.5 w-6 h-6 rounded-full bg-mytheme"></div>
+        <div className="absolute -left-2.5 w-6 h-6 shadow-lg shadow-mytheme rounded-full bg-mytheme"></div>
       </div>
     </div>
   )
@@ -44,10 +44,10 @@ const AboutPage = () => {
 
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full overflow-scroll overflow-x-hidden lg:flex p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-10">
+      <div className="h-full overflow-scroll overflow-x-hidden scrollbar scrollbar-track-transparent scrollbar-thumb-mytheme lg:flex p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-10">
 
       {/*TEXT CONTAINER*/}
-        <div className="mt-20 flex flex-col gap-48 md:gap-56 lg:gap-36 xl:gap-64 lg:w-3/5">
+        <div className="mt-10 flex flex-col gap-48 md:gap-56 lg:gap-36 xl:gap-64 lg:w-3/5">
       {/*BIO*/}
           <div className="flex flex-col gap-8 justify-center">
             <h1 className="font-bold text-4xl">BIOGRAPHY</h1>
@@ -128,7 +128,7 @@ const AboutPage = () => {
         </div>
     
         {/*IMAGE CONTAINER*/}
-        <motion.div className="hidden overflow-hidden h-[640px] lg:flex items-center duration-200 filter hover:blur-0 blur-sm justify-center w-2/5 sticky top-5 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:3, ease: "easeInOut" }}>
+        <motion.div className="hidden overflow-hidden h-[640px] lg:flex items-center duration-200 hover:blur-0 blur-sm justify-center w-2/5 sticky top-5 z-30" initial={{y:-200, opacity:0 }} animate={{ y:0, opacity:1 }} transition={{ duration: 0.5, delay:3, ease: "easeInOut" }}>
           <AnimatedCover/>
           {/*<Image src='/about.png' alt="cover" height={512} width={512} className="rounded-tl-[200px] rounded-bl-[200px] h-full w-full"/>*/}
         </motion.div>
