@@ -7,7 +7,7 @@ import Link from "next/link";
 const Homepage = () => {
   return (
 
-    <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
+    <motion.div className="h-full scrollbar-none" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
     <div className="overflow-hidden items-center h-full flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
 
     {/*IMAGE CONTAINER*/}
