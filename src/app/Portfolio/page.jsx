@@ -9,7 +9,7 @@ import { project1, project2, project3 } from "@/components/Slides";
 const PortfolioPage = () => {
 
   return (
-    <motion.div className="h-full overflow-x-hidden scrollbar-none" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
+    <motion.div className="h-full overflow-x-hidden  scrollbar scrollbar-track-transparent scrollbar-thumb-mytheme " initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
 
       <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-6xl md:text-8xl text-center">My work<Arrow/></div>
 

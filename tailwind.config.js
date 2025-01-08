@@ -33,7 +33,7 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
-        'bounce-1': 'bounce 1.25s linear infinite',
+        'bounce-1': 'bounce 2s linear infinite',
         'moving': 'translate 10s infinite',
       },
       keyframes: {
