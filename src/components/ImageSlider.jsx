@@ -5,8 +5,9 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Slides = ({ src, alt, title, desc }) => {
+const Slides = ({ src, alt, title, desc, link }) => {
   return (
     <div className="h-[800px] lg:h-[700px] flex backdrop-blur-md p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       <div className='w-screen h-[700px] lg:h-[600px] flex flex-col lg:justify-between p-6 gap-8 rounded-2xl bg-gray-300 dark:bg-slate-900 duration-200'>
@@ -19,14 +20,16 @@ const Slides = ({ src, alt, title, desc }) => {
           <Image
             src={src}
             alt={alt}
-            height={256}
-            width={256}
-            className="block w-fit lg:w-2/3 h-fit object-cover rounded-2xl"
+            height={1024}
+            width={1024}
+            className="w-fit lg:w-2/3 h-fit object-cover rounded-2xl"
           />
-          <div className="w-fit lg:w-1/3 lg:text-xl">
+          <div className="flex flex-col gap-5 w-fit lg:w-1/3 lg:text-xl">
             <h1 className='text-xl font-semibold'>Narrative:</h1>
             <p className="text-base">{desc}</p>
-          </div>       
+            <Link href={link} target='_blank' className="w-fit bg-mytheme hover:bg-black text-white rounded-md p-2">Demo</Link>
+          </div>  
+               
         </div> 
 
       </div>
@@ -56,7 +59,7 @@ const ImageSlider = ({ slides }) => {
       >
         {slides.flat().map((slide, index) => (
           <SwiperSlide key={index}>
-            <Slides src={slide.src} alt={slide.alt} title={slide.title} desc={slide.desc} />
+            <Slides src={slide.src} alt={slide.alt} title={slide.title} desc={slide.desc} link={slide.link} />
           </SwiperSlide>
         ))}
       </Swiper>
