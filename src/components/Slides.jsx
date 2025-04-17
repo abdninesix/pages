@@ -1,15 +1,15 @@
 export const projects = [
     [
         {
-            src: "/projects/blog.png", alt: "hello",
+            src: "/projects/blog.png", alt: "blog",
             title: "Blog website",
-            desc: "Responsive design, ensures a seamless user experience across all devices. User-Friendly Interface with easy navigation and intuitive layouts. High performance with fast load times and optimized performance. Secure and robust security features to protect user data. Engaging Content having rich, relevant content that keeps users engaged.",
+            desc: "A sleek and responsive fullstack blog website built with React, featuring a clean, modern UI. Users can read, create, and manage blog posts with smooth navigation and real-time updates. The site is optimized for performance and mobile-friendly, offering a seamless user experience across all devices.",
             link: "https://blog-by-abdullah.vercel.app/"
         },
         {
-            src: "/projects/todo.png", alt: "hello",
+            src: "/projects/todo.png", alt: "todo",
             title: "Minimal ToDo",
-            desc: "Responsive design, ensures a seamless user experience across all devices. User-Friendly Interface with easy navigation and intuitive layouts. High performance with fast load times and optimized performance. Secure and robust security features to protect user data. Engaging Content having rich, relevant content that keeps users engaged.",
+            desc: "A simple yet beautifully designed todo app built with a clean and intuitive interface. Users can easily add, update, and delete tasks, helping them stay organized and focused. The app offers a smooth user experience with responsive design, making task management effortless on any device.",
             link: "https://todo-by-abdullah.vercel.app/"
         },
     ],
