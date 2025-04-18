@@ -50,7 +50,7 @@ const ContactPage = () => {
 
   return (
     <motion.div className="h-full scrollbar-none" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
-      <div className="h-full overflow-hidden flex flex-col items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full overflow-hidden flex flex-col items-center justify-center gap-4 lg:gap-20 lg:flex-row pb-4 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
         
         <div className="lg:w-1/2 h-1/5 lg:h-full flex flex-col gap-10 items-center justify-center text-3xl md:text-6xl">
           <div className="flex flex-wrap">

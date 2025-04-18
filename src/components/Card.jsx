@@ -23,7 +23,7 @@ const Card = ({ image, alt, title, desc, link }) => {
                 </Link>
             </div>
 
-            <p className="text-sm text-gray-700 dark:text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-full transition-all duration-200 overflow-hidden">{desc}</p>
+            <p className="text-sm mt-2 text-gray-700 dark:text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-200 overflow-hidden">{desc}</p>
 
         </div>
     );

@@ -39,7 +39,7 @@ const AboutPage = () => {
 
   const skillRef = useRef()
   const skillRefView = useInView(skillRef, { margin: "-80px" })
-  const skills = ["HTML5", "CSS3", "Javascript", "Typescript", "React.js", "Next.js", "TailwindCSS", "Framer-motion", "GSAP", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma", "Blender", "CAD modeling", "3D Printing", "Visual Studio", "C#", "Android Studio", "Java", "Python"];
+  const skills = ["HTML5", "CSS3", "Javascript", "Typescript", "Python", "React.js", "Bootstrap", "Next.js", "TailwindCSS", "Framer-motion", "GSAP", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma", "PostgreSQL", "CAD A.I Integration", "Stripe Integration", "Shadcn/UI", "Imagekit.io", "Uploadthing"];
 
   const experienceRef = useRef()
   const experienceRefView = useInView(experienceRef, { margin: "-100px" })
@@ -49,7 +49,7 @@ const AboutPage = () => {
 
   return (
     <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
-      <div className="h-full overflow-x-hidden scrollbar scrollbar-track-transparent scrollbar-thumb-mytheme lg:flex p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-10">
+      <div className="h-full overflow-x-hidden scrollbar scrollbar-track-transparent scrollbar-thumb-mytheme lg:flex p-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 gap-10">
 
         {/*TEXT CONTAINER*/}
         <div className="mt-10 flex flex-col gap-48 md:gap-56 lg:gap-36 xl:gap-64 lg:w-3/5">
@@ -81,7 +81,7 @@ const AboutPage = () => {
                 <InfoCard
                   title="Next.js Web"
                   description="I&apos;m a Next.js developer, proficient in building high-performance, server-rendered web applications. With a good foundation in the MERN stack—MongoDB, Express, React, and Node.js. I&apos;m eager to craft seamless, user-friendly digital experiences. Every line of code I write aims to elevate the web."
-                  date="2022-Present" />
+                  date="2023-Present" />
                 <Line />
                 <div className="w-5/12 relative"></div>
               </div>
@@ -93,15 +93,15 @@ const AboutPage = () => {
                 <InfoCard
                   title="MERN Stack Web"
                   description="I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time. 🚀"
-                  date="2022-Present" />
+                  date="2023-Present" />
               </div>
 
               {/*LIST ITEM 3*/}
               <div className="flex justify-between h-fit">
                 <InfoCard
-                  title="Frontend Web"
+                  title="Frontend and UX/UI design"
                   description="I&apos;m a frontend dev, crafting responsive, visually appealing interfaces with HTML, CSS, and JavaScript. Every project is a chance to enhance the digital experience and make the web more enjoyable for all. 🎨"
-                  date="2022" />
+                  date="2020-Present" />
                 <Line />
                 <div className="w-5/12 relative"></div>
               </div>
