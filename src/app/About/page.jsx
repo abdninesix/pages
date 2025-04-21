@@ -39,7 +39,7 @@ const AboutPage = () => {
 
   const skillRef = useRef()
   const skillRefView = useInView(skillRef, { margin: "-80px" })
-  const skills = ["HTML5", "CSS3", "Javascript", "Typescript", "Python", "React.js", "Bootstrap", "Next.js", "TailwindCSS", "Framer-motion", "GSAP", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma", "PostgreSQL", "CAD A.I Integration", "Stripe Integration", "Shadcn/UI", "Imagekit.io", "Uploadthing"];
+  const skills = ["HTML5", "CSS3", "Javascript", "Typescript", "Python", "React.js", "Bootstrap", "Next.js", "TailwindCSS", "Framer-motion", "GSAP", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma", "PostgreSQL", "A.I Integration", "Stripe Integration", "Shadcn/UI", "Imagekit.io", "Uploadthing"];
 
   const experienceRef = useRef()
   const experienceRefView = useInView(experienceRef, { margin: "-100px" })
