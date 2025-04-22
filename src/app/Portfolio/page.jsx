@@ -29,9 +29,9 @@ const PortfolioPage = () => {
         </div>
 
         <div className="w-full mt-10 flex flex-col items-center justify-center">
-          <div class="w-fit z-50 bg-yellow-100 text-yellow-800 border border-yellow-300 p-2 rounded-b shadow-md flex flex-col items-start">
+          <div class="w-fit z-50 p-2 flex flex-col items-start">
             <div className="flex gap-2">
-              <svg class="w-5 h-5 mt-0.5 shrink-0 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
               </svg>
               <p class="font-semibold">Work In Progress</p>
