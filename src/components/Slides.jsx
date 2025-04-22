@@ -15,7 +15,7 @@ export const projects = [
         {
             src: "/projects/calc.png", alt: "todo",
             title: "AI Powered Calculator",
-            desc: "A simple yet beautifully designed todo app built with a clean and intuitive interface. Users can easily add, update, and delete tasks, helping them stay organized and focused. The app offers a smooth user experience with responsive design, making task management effortless on any device.",
+            desc: "This Python-based drawing calculator lets users sketch mathematical expressions directly on a canvas. It intelligently analyzes the drawing using AI, interprets the expression, calculates the result, and displays it with LaTeX-rendered clarity.",
             link: "https://ai-calculator-by-abdullah.vercel.app/"
         },
     ],
