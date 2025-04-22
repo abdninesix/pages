@@ -36,7 +36,7 @@ const PortfolioPage = () => {
               </svg>
               <p class="font-semibold">Work In Progress</p>
             </div>
-            <p class="text-sm">Some features in my showcased projects are still under development and may not function as expected. I'm actively working to improve them. Thank you for your understanding!</p>
+            <p class="text-sm">Some features in my showcased projects are still under development and may not function as expected. I&apos;m actively working to improve them. Thank you for your understanding!</p>
           </div>
         </div>
 
