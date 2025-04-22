@@ -13,10 +13,16 @@ export const projects = [
             link: "https://todo-by-abdullah.vercel.app/"
         },
         {
-            src: "/projects/calc.png", alt: "todo",
+            src: "/projects/calc.png", alt: "ai calc",
             title: "AI Powered Calculator",
             desc: "This Python-based drawing calculator lets users sketch mathematical expressions directly on a canvas. It intelligently analyzes the drawing using AI, interprets the expression, calculates the result, and displays it with LaTeX-rendered clarity.",
             link: "https://ai-calculator-by-abdullah.vercel.app/"
+        },
+        {
+            src: "/projects/kashmir.png", alt: "frontend",
+            title: "Kashmir Travels",
+            desc: "A beautifully crafted frontend for a Kashmir travel application built with Next.js and TypeScript. The design focuses on a smooth user experience with modern UI components, optimized performance, and responsive layout to help users explore scenic destinations across Kashmir.",
+            link: "https://kashmir-travels.vercel.app/"
         },
     ],
 ];
