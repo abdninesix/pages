@@ -28,8 +28,20 @@ const PortfolioPage = () => {
           ))}
         </div>
 
+        <div className="w-full mt-10 flex flex-col items-center justify-center">
+          <div class="w-fit z-50 bg-yellow-100 text-yellow-800 border border-yellow-300 p-2 rounded-b shadow-md flex flex-col items-start">
+            <div className="flex gap-2">
+              <svg class="w-5 h-5 mt-0.5 shrink-0 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+              </svg>
+              <p class="font-semibold">Work In Progress</p>
+            </div>
+            <p class="text-sm">Some features in my showcased projects are still under development and may not function as expected. I'm actively working to improve them. Thank you for your understanding!</p>
+          </div>
+        </div>
+
         <div className="h-screen flex flex-col gap-5 items-center justify-center text-center">
-          <h1 className="text-4xl">Want to have your project done like this?</h1>
+          <h1 className="text-4xl">Want to start your projects?</h1>
           <Link href="/Contact" className="bg-mytheme hover:bg-black text-white rounded-md p-2">Let&apos;s work</Link>
         </div>
 
