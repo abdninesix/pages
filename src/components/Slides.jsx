@@ -30,5 +30,11 @@ export const projects = [
             desc: "A sleek and beautiful game website enhanced with smooth GSAP animations for interactive transitions and dynamic gameplay experiences. Designed for performance and visual appeal, every element is brought to life with fluid motion.",
             link: "https://gsap-based-by-abdullah.vercel.app/"
         },
+        {
+            src: "/projects/shadcn.png", alt: "frontend",
+            title: "Shadcn/UI dashboard",
+            desc: "A modern, fully responsive frontend dashboard built with Next.js 15 and Shadcn UI components. Focused purely on clean design, smooth user interactions, and modular, scalable component architecture.",
+            link: "https://dashboard-by-abdullah.vercel.app/"
+        },
     ],
 ];
