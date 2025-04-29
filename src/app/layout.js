@@ -7,7 +7,7 @@ const myfont = Barlow({ weight: '400', subsets: ['latin'], display: 'swap', });
 export async function generateMetadata() {
   return {
     title: "Abdullah | Portfolio",
-    description: "Experience a true responsiveness",
+    description: "True design experience",
     icons: {
       icon: "/favicon.svg",
     },
