@@ -19,8 +19,8 @@ const Homepage = () => {
     <div className="h-auto lg:h-fit flex flex-col gap-5 lg:gap-10 justify-center text-center lg:text-left">
 
       <div className="flex flex-col gap-4 lg:gap-6">
-        <h1 className="text-4xl md:text-6xl font-bold z-200">Meet <span className="text-mytheme">Abdullah</span></h1>
-        <h1 className="text-2xl md:text-4xl font-bold z-20 duration-200 relative group">A&nbsp;
+        <h1 className="text-4xl md:text-6xl font-bold">Meet <span className="text-mytheme">Abdullah</span></h1>
+        <h1 className="text-2xl md:text-4xl font-bold duration-200 relative group">A&nbsp;
           <span className="p-1 rounded-lg bg-gray-200 dark:text-gray-800">NEXT.js</span>&nbsp;&&nbsp;
           <span className="p-1 rounded-lg bg-gray-200">
             <span className="text-green-700">M</span>

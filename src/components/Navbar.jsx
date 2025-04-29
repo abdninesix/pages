@@ -44,7 +44,7 @@ const Navbar = () => {
       {/*LOGO*/}
       <div className={`${myfont2.className} lg:w-fit md:hidden lg:flex relative z-30`}>
         <Link href="/" className="flex items-center justify-center">
-          <span className="text-3xl hover:text-4xl rounded-full bg-white shadow-lg dark:bg-black duration-150">A;</span>
+          <span className="text-3xl hover:text-4xl rounded-full duration-200">A;</span>
           {/*<span className="rounded-lg bg-red-600 text-white px-2">Dev</span>*/}
         </Link>
       </div>
