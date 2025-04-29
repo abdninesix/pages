@@ -7,6 +7,12 @@ export const projects = [
             link: "https://blog-by-abdullah.vercel.app/"
         },
         {
+            src: "/projects/threads.png", alt: "threads",
+            title: "Threads Clone",
+            desc: "A fullstack Threads clone built with Next.js and Shadcn UI, featuring user authentication, post creation, threaded conversations, and a sleek, responsive interface. Designed with modern best practices for performance, scalability, and clean UI/UX.",
+            link: "https://threads-by-abdullah.vercel.app/"
+        },
+        {
             src: "/projects/todo.png", alt: "todo",
             title: "Minimal Task Manager",
             desc: "A simple yet beautifully designed todo app built with a clean and intuitive interface. Users can easily add, update, and delete tasks, helping them stay organized and focused. The app offers a smooth user experience with responsive design, making task management effortless on any device.",
