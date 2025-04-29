@@ -18,7 +18,7 @@ const Card = ({ image, alt, title, desc, link }) => {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-mytheme hover:bg-black text-white rounded-md p-2 w-fit"
+                    className="bg-mytheme hover:bg-black text-white rounded-md p-2 h-fit w-fit"
                 >
                     Demo
                 </Link>

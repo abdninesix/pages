@@ -20,13 +20,13 @@ export const projects = [
         },
         {
             src: "/projects/kashmir.png", alt: "frontend",
-            title: "Kashmir Travels Landing Page",
+            title: "App Landing Page",
             desc: "A beautifully crafted frontend for a Kashmir travel application built with Next.js and TypeScript. The design focuses on a smooth user experience with modern UI components, optimized performance, and responsive layout to help users explore scenic destinations across Kashmir.",
             link: "https://kashmir-travels.vercel.app/"
         },
         {
             src: "/projects/gsap.png", alt: "frontend",
-            title: "GSAP Animated Landing Page",
+            title: "GSAP Landing Page",
             desc: "A sleek and beautiful game website enhanced with smooth GSAP animations for interactive transitions and dynamic gameplay experiences. Designed for performance and visual appeal, every element is brought to life with fluid motion.",
             link: "https://gsap-based-by-abdullah.vercel.app/"
         },
