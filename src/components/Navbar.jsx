@@ -56,14 +56,16 @@ const Navbar = () => {
         ))}
       </div>
 
+
       {/*Social links*/}
-      <div className="hidden md:flex">
+      <div className="hidden md:block">
         <Socials />
       </div>
 
+      {/*MOBILE MENU*/}
+
       <div className="flex z-30 md:hidden"><ThemeButton /></div>
 
-      {/*MOBILE MENU*/}
       {/*MENU BUTTON*/}
       <div className="md:hidden">
         <button className="w-10 h-8 flex flex-col justify-between z-20 relative" onClick={() => setOpen((prev) => !prev)}>
