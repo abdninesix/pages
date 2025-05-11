@@ -7,12 +7,6 @@ export const projects = [
             link: "https://blog-by-abdullah.vercel.app/"
         },
         {
-            src: "/projects/threads.png", alt: "threads",
-            title: "Threads Clone",
-            desc: "A fullstack Threads clone built with Next.js and Shadcn UI, featuring user authentication, post creation, threaded conversations, and a sleek, responsive interface. Designed with modern best practices for performance, scalability, and clean UI/UX.",
-            link: "https://threads-by-abdullah.vercel.app/"
-        },
-        {
             src: "/projects/todo.png", alt: "todo",
             title: "Minimal Task Manager",
             desc: "A simple yet beautifully designed todo app built with a clean and intuitive interface. Users can easily add, update, and delete tasks, helping them stay organized and focused. The app offers a smooth user experience with responsive design, making task management effortless on any device.",
@@ -23,6 +17,18 @@ export const projects = [
             title: "A.I Powered Calculator",
             desc: "This Python-based drawing calculator lets users sketch mathematical expressions directly on a canvas. It intelligently analyzes the drawing using AI, interprets the expression, calculates the result, and displays it with LaTeX-rendered clarity.",
             link: "https://ai-calculator-by-abdullah.vercel.app/"
+        },
+        {
+            src: "/projects/hi.png", alt: "social media",
+            title: "Social Media Platform",
+            desc: "An eye-catching, responsive social media frontend built with Next.js and styled with Tailwind CSS. It features dynamic feeds, interactive posts, and smooth navigation—designed for speed, style, and seamless user experience.",
+            link: "https://social-media-by-abdullah.vercel.app/"
+        },        
+        {
+            src: "/projects/threads.png", alt: "threads",
+            title: "Threads Clone",
+            desc: "A fullstack Threads clone built with Next.js and Shadcn UI, featuring user authentication, post creation, threaded conversations, and a sleek, responsive interface. Designed with modern best practices for performance, scalability, and clean UI/UX.",
+            link: "https://threads-by-abdullah.vercel.app/"
         },
         {
             src: "/projects/kashmir.png", alt: "frontend",
