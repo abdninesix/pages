@@ -15,7 +15,7 @@ const Homepage = () => {
 
         {/*IMAGE CONTAINER*/}
         <motion.div className="flex-none overflow-hidden size-52 lg:size-80 border-4 border-mytheme rounded-t-full" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
-          <Image src="/p2.png" alt="hero" width={500} height={500} priority className="relative brightness-0 hover:brightness-150 duration-200" />
+          <Image src="/p2.png" alt="hero" width={500} height={500} priority className="relative brightness-0 dark:hover:brightness-100 hover:brightness-150 duration-200" />
         </motion.div>
 
         {/*TEXT & BUTTON CONTAINER */}
