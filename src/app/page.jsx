@@ -14,8 +14,8 @@ const Homepage = () => {
       <div className="items-center flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
 
         {/*IMAGE CONTAINER*/}
-        <motion.div className="flex-none w-44 h-44 md:w-56 md:h-56 lg:w-[380px] lg:h-[380px] p-2" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
-          <Image src="/about.png" alt="hero" width={500} height={500} priority className="h-full w-full rounded-full md:hover:rounded-tr-none md:hover:rounded-br-none duration-200" />
+        <motion.div className="flex-none overflow-hidden size-52 lg:size-80 border-4 border-mytheme rounded-t-full" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
+          <Image src="/p2.png" alt="hero" width={500} height={500} priority className="relative brightness-0 hover:brightness-150 duration-200" />
         </motion.div>
 
         {/*TEXT & BUTTON CONTAINER */}
@@ -35,7 +35,7 @@ const Homepage = () => {
               {/*<Image src="/mern.png" alt="MERN" height={256} width={256} className="h-14 w-fit absolute -top-3 left-[680px] transform opacity-0 lg:group-hover:opacity-100 duration-300"/>*/}
             </h1>
 
-            <p className="text-justify md:text-xl">Hi there! I&apos;m a spirited and dedicated MERN stack developer with a CGPA of 3.45, here to craft vibrant web experiences. From dynamic databases with MongoDB to sleek front-end designs with React, and blazing-fast, SEO-friendly web applications powered by Next.js, I&apos;ve got all the tools to make your digital dreams a reality. Let&apos;s code something awesome together!</p>
+            <p className="text-justify md:text-xl">As a seasoned developer, I specialize in creating sophisticated, high-performance web applications using React.js and Next.js. I focus on delivering seamless, intuitive experiences that captivate users and stand the test of time. Let&apos;s build something remarkable together.</p>
           </motion.div>
 
           <motion.div className="flex flex-wrap gap-3 lg:gap-4 justify-start" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 2, ease: "easeInOut" }}>
