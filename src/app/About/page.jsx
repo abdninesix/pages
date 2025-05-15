@@ -133,7 +133,7 @@ const AboutPage = () => {
           {/*CERTIFICATIONS*/}
           <div className="flex flex-col gap-12 justify-center" ref={certiRef}>
             <motion.h1 initial={{ x: "-500px" }} animate={certiRefView ? { x: "0" } : {}} className="font-bold text-3xl">CERTIFICATION</motion.h1>
-            <motion.div initial={{ x: "-500px" }} animate={certiRefView ? { x: "0" } : {}} transition={{ delay: 0.2 }} className="flex flex-wrap gap-4 mb-20">
+            <motion.div initial={{ x: "-500px" }} animate={certiRefView ? { x: "0" } : {}} transition={{ delay: 0.2 }} className="flex flex-wrap gap-4 mb-20 shadow-lg">
               <Link href="https://www.udemy.com/certificate/UC-eab808e0-d1b5-4db9-86f8-ad8c2cf58e9e/">
                 <Image src='/certif.jpg' alt="cover" height={1024} width={1024} className="object-cover rounded-md" />
               </Link>
