@@ -7,7 +7,7 @@ import Link from "next/link";
 const Homepage = () => {
   return (
 
-    <motion.div className="flex flex-col gap-12 md:gap-16 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
+    <motion.div className="flex flex-col gap-12 md:gap-20 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
 
       <motion.span className="mt-6 md:mt-12 flex justify-center text-4xl md:text-5xl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 0.75, ease: "easeInOut" }}>بسم الله الرحمن الرحيم</motion.span>
 

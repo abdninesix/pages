@@ -21,6 +21,7 @@ const PortfolioPage = () => {
                 image={project.src}
                 alt={project.alt}
                 title={project.title}
+                cat={project.cat}
                 desc={project.desc}
                 link={project.link}
               />

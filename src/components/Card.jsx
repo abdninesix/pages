@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Card = ({ image, alt, title, desc, link }) => {
+const Card = ({ image, alt, title, desc, cat, link }) => {
     return (
         <div className="group flex flex-col max-w-[25rem] p-4 rounded-2xl bg-gray-300 dark:bg-slate-900 shadow-lg duration-200">
             <Image
@@ -13,7 +13,7 @@ const Card = ({ image, alt, title, desc, link }) => {
                 className="rounded-xl object-cover w-full h-fit mb-4"
             />
             <div className='flex justify-between'>
-                <h2 className="text-2xl font-semibold">{title}</h2>
+                <h2 className="text-2xl font-semibold">{title}<span className='px-1 ml-1 bg-white text-black rounded-md text-xs'>{cat}</span></h2>
                 <Link
                     href={link}
                     target="_blank"
