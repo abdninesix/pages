@@ -13,19 +13,22 @@ const Card = ({ image, alt, title, desc, cat, link }) => {
                 className="rounded-xl object-cover w-full h-fit mb-4"
             />
             <div className='flex justify-between'>
-                <h2 className="text-2xl font-semibold">{title}<span className='px-1 ml-1 bg-white text-black rounded-md text-xs'>{cat}</span></h2>
+                <div className='flex flex-col gap-2'>
+                    <h2 className="text-2xl font-semibold">{title}</h2>
+                    <span className='px-1 w-fit bg-white text-black font-semibold rounded-md text-xs'>{cat}</span>
+                    <p className="text-sm text-justify text-gray-700 dark:text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-200">{desc}</p>
+                </div>
                 <Link
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-mytheme hover:bg-black text-white rounded-md p-2 h-fit w-fit"
+                    className="mt-3 bg-mytheme hover:bg-black text-white rounded-md p-2 h-fit w-fit"
                 >
                     Demo
                 </Link>
             </div>
 
-            <p className="text-sm mt-2 text-gray-700 dark:text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-200 overflow-hidden">{desc}</p>
-
+            
         </div>
     );
 };

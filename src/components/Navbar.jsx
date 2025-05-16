@@ -68,7 +68,7 @@ const Navbar = () => {
 
       {/*MENU BUTTON*/}
       <div className="md:hidden">
-        <button className="w-10 h-8 flex flex-col justify-between z-20 relative" onClick={() => setOpen((prev) => !prev)}>
+        <button className="w-10 h-8 flex flex-col justify-between z-30 relative" onClick={() => setOpen((prev) => !prev)}>
           <motion.div variants={topVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black dark:bg-white rounded origin-left"></motion.div>
           <motion.div variants={centerVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black dark:bg-white rounded"></motion.div>
           <motion.div variants={bottomVariants} animate={open ? "opened" : "closed"} className="w-10 h-1 bg-black dark:bg-white rounded origin-left"></motion.div>
@@ -77,7 +77,7 @@ const Navbar = () => {
 
       {/*MENU ITEMS*/}
       {open && (
-        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute overflow-hidden rounded-lg top-0 right-0 w-screen h-screen bg-gray-400 dark:bg-slate-950 flex flex-col items-center justify-center gap-10 text-4xl font-medium z-10">
+        <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute overflow-hidden rounded-lg top-0 right-0 w-screen h-screen bg-gray-400 dark:bg-slate-950 flex flex-col items-center justify-center gap-10 text-4xl font-medium z-20">
           {links.map(link => (
             <motion.div variants={itemVariants} key={link.title}>
               <Link className="focus:underline" href={link.url} >{link.title}</Link>
