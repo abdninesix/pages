@@ -39,7 +39,7 @@ const AboutPage = () => {
 
   const skillRef = useRef()
   const skillRefView = useInView(skillRef, { margin: "-80px" })
-  const skills = ["HTML5", "CSS3", "Javascript", "Typescript", "Python", "React.js", "Bootstrap", "Next.js", "TailwindCSS", "Framer-motion", "GSAP", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma", "PostgreSQL", "A.I Integration", "Stripe Integration", "Shadcn/UI", "Imagekit.io", "Uploadthing"];
+  const skills = ["HTML5", "CSS3", "Javascript", "Typescript", "Python", "React.js", "Bootstrap", "Next.js", "TailwindCSS", "Framer-motion", "GSAP", "Figma", "Node.js", "Express.js", "MongoDB", "Prisma", "Laravel", "PostgreSQL", "A.I Integration", "Stripe Integration", "Shadcn/UI", "Imagekit.io", "Uploadthing"];
 
   const experienceRef = useRef()
   const experienceRefView = useInView(experienceRef, { margin: "-100px" })
@@ -76,6 +76,16 @@ const AboutPage = () => {
             <motion.h1 initial={{ x: "-500px" }} animate={experienceRefView ? { x: "0" } : {}} className="font-bold text-3xl">EXPERIENCE</motion.h1>
             <motion.div initial={{ x: "-500px" }} animate={experienceRefView ? { x: "0" } : {}} transition={{ delay: 0.2 }}>
 
+              {/*LIST ITEM 6*/}
+              <div className="flex justify-between h-fit">
+                <div className="w-5/12 relative"></div>
+                <Line />
+                <InfoCard
+                  title="Laravel Web"
+                  description="I&apos;m a Next.js developer, proficient in building high-performance, server-rendered web applications. With a good foundation in the MERN stack—MongoDB, Express, React, and Node.js. I&apos;m eager to craft seamless, user-friendly digital experiences. Every line of code I write aims to elevate the web."
+                  date="2025-Present" />
+              </div>
+
               {/*LIST ITEM 5*/}
               <div className="flex justify-between h-fit">
                 <InfoCard
@@ -92,7 +102,7 @@ const AboutPage = () => {
                 <Line />
                 <InfoCard
                   title="MERN Stack Web"
-                  description="I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time. 🚀"
+                  description="I&apos;m a MERN stack developer, wielding MongoDB, Express, React, and Node.js like a pro. My passion lies in creating seamless, user-friendly applications that deliver powerful digital experiences. Every project is a chance to make the web a better place, one line of code at a time."
                   date="2023-Present" />
               </div>
 
@@ -100,7 +110,7 @@ const AboutPage = () => {
               <div className="flex justify-between h-fit">
                 <InfoCard
                   title="Frontend and UX/UI design"
-                  description="I&apos;m a frontend dev, crafting responsive, visually appealing interfaces with HTML, CSS, and JavaScript. Every project is a chance to enhance the digital experience and make the web more enjoyable for all. 🎨"
+                  description="I&apos;m a frontend dev, crafting responsive, visually appealing interfaces with HTML, CSS, and JavaScript. Every project is a chance to enhance the digital experience and make the web more enjoyable for all."
                   date="2020-Present" />
                 <Line />
                 <div className="w-5/12 relative"></div>
