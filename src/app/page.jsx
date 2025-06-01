@@ -14,12 +14,12 @@ const Homepage = () => {
       <div className="items-center flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
 
         {/*IMAGE CONTAINER*/}
-        <motion.div className="group relative flex-none overflow-hidden size-52 lg:size-80 border-b-4 border-mytheme rounded-t-full" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
-          <div className="group-hover:opacit absolute top-[35%] ml-[31.5%] flex gap-1 lg:gap-3 w-fit -rotate-[12deg] z-10 duration-500">
+        <motion.div className="group relative flex-none overflow-hidden size-52 lg:size-80 border-4 border-mytheme rounded-t-full" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
+          <div className="group-focus:opacity-0 absolute top-[35%] ml-[31.5%] flex gap-1 lg:gap-3 w-fit -rotate-[12deg] z-10 duration-500">
             <div className="h-3 w-5 lg:h-5 lg:w-7 rounded-b-full bg-mytheme" />
             <div className="h-3 w-5 lg:h-5 lg:w-7 rounded-b-full bg-mytheme" />
           </div>
-          <Image src="/p2.png" alt="hero" width={500} height={500} priority className="group brightness-0 hover:brightn-150 duration-500" />
+          <Image src="/p2.png" alt="hero" width={500} height={500} priority className="group brightness-0 group-focus:brightness-150 duration-500" />
         </motion.div>
 
         {/*TEXT & BUTTON CONTAINER */}
