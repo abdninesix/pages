@@ -73,7 +73,7 @@ const AboutPage = () => {
 
           {/*EXPERIENCE*/}
           <div className="flex flex-col gap-12 justify-center" ref={experienceRef}>
-            <motion.h1 initial={{ x: "-500px" }} animate={experienceRefView ? { x: "0" } : {}} className="font-bold text-3xl">EXPERIENCE</motion.h1>
+            <motion.h1 initial={{ x: "-500px" }} animate={experienceRefView ? { x: "0" } : {}} className="font-bold text-3xl">MY JOURNEY</motion.h1>
             <motion.div initial={{ x: "-500px" }} animate={experienceRefView ? { x: "0" } : {}} transition={{ delay: 0.2 }}>
 
               {/*LIST ITEM 6*/}
