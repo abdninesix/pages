@@ -10,7 +10,6 @@ const Card = ({ image, alt, title, desc, cat, link }) => {
                 width={800}
                 height={450}
                 priority
-                unoptimized
                 className="rounded-xl object-cover w-full h-fit mb-4"
             />
             <div className='flex justify-between'>
