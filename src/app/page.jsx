@@ -54,7 +54,6 @@ const Homepage = () => {
             <Link href="/Portfolio" className="bg-mytheme hover:bg-black text-white rounded-md p-2">My work</Link>
             <Link href="/Contact" className="ring-1 ring-black dark:ring-white hover:ring-2 font-semibold rounded-md p-2">Work with me</Link>
           </motion.div>
-
         </div>
 
       </div>
