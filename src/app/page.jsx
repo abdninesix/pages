@@ -28,14 +28,14 @@ const Homepage = () => {
           <Image src="/p2.png" alt="hero" width={500} height={500} priority className="group brightness-0 group-active:brightness-150 duration-500" />
         </motion.div> */}
 
-        <motion.div onContextMenu={handleRightClick} className="group relative w-full h-56 md:h-full lg:w-72 select-none" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 8, ease: "easeInOut" }}>
+        <motion.div onContextMenu={handleRightClick} className="group relative w-full h-56 md:h-full lg:w-72 select-none" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 4, delay: 3, ease: "easeInOut" }}>
           <LaptopContainer/>
         </motion.div>
 
         {/*TEXT & BUTTON CONTAINER */}
         <div className="h-auto lg:h-fit flex flex-col gap-5 lg:gap-6 justify-center text-center lg:text-left">
 
-          <motion.div className="flex flex-col gap-4 lg:gap-6" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 1.5, ease: "easeInOut" }}>
+          <motion.div className="flex flex-col gap-4 lg:gap-6" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 1, ease: "easeInOut" }}>
             <h1 className="text-4xl md:text-6xl font-bold">Meet <span className="text-mytheme">Abdullah</span></h1>
             <h1 className="text-2xl md:text-4xl font-bold flex flex-wrap justify-center lg:justify-start duration-200">
               <span className="p-1 rounded-lg bg-gray-200">
@@ -54,7 +54,7 @@ const Homepage = () => {
             <p className="text-justify md:text-xl">As a seasoned developer, I specialize in creating sophisticated, high-performance web applications using React.js/Node.js, Next.js and Laravel. I focus on delivering seamless, intuitive experiences that captivate users and stand the test of time. Let&apos;s build something remarkable together.</p>
           </motion.div>
 
-          <motion.div className="flex justify-center lg:justify-start gap-3 lg:gap-4" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 2, ease: "easeInOut" }}>
+          <motion.div className="flex justify-center lg:justify-start gap-3 lg:gap-4" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 1.5, ease: "easeInOut" }}>
             <Link href="/About" className="bg-mytheme hover:bg-black text-white rounded-md p-2">About me</Link>
             <Link href="/Portfolio" className="bg-mytheme hover:bg-black text-white rounded-md p-2">My work</Link>
             <Link href="/Contact" className="ring-1 ring-black dark:ring-white hover:ring-2 font-semibold rounded-md p-2">Work with me</Link>
