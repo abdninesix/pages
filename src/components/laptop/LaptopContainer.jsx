@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import { OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei'
-import { Laptop } from './laptop'
+import { Laptop } from './Laptop'
 
 const LaptopContainer = () => {
     return (
