@@ -28,7 +28,7 @@ const Homepage = () => {
           <Image src="/p2.png" alt="hero" width={500} height={500} priority className="group brightness-0 group-active:brightness-150 duration-500" />
         </motion.div> */}
 
-        <motion.div onContextMenu={handleRightClick} className="group relative w-full h-56 md:h-full lg:w-72 select-none" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 4, ease: "easeInOut" }}>
+        <motion.div onContextMenu={handleRightClick} className="group relative w-full h-56 md:h-full lg:w-72 select-none" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 8, ease: "easeInOut" }}>
           <LaptopContainer/>
         </motion.div>
 
