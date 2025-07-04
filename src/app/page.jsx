@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import LaptopContainer from "@/components/laptop/LaptopContainer";
 
 const Homepage = () => {
 
@@ -12,19 +13,23 @@ const Homepage = () => {
 
   return (
 
-    <motion.div className="flex flex-col gap-12 md:gap-20 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
+    <motion.div className="flex flex-col gap-8 lg:gap-16 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
 
       <motion.span className="mt-6 md:mt-12 flex justify-center text-4xl md:text-5xl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 0.75, ease: "easeInOut" }}>بسم الله الرحمن الرحيم</motion.span>
 
       <div className="items-center flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
 
         {/*IMAGE CONTAINER*/}
-        <motion.div onContextMenu={handleRightClick} className="group relative flex-none overflow-hidden size-52 lg:size-80 border-2 border-mytheme rounded-t-full select-none" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
+        {/* <motion.div onContextMenu={handleRightClick} className="group relative flex-none overflow-hidden size-52 lg:size-80 border-2 border-mytheme rounded-t-full select-none" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
           <div className="group-active:opacity-0 absolute top-[35%] ml-[31.5%] flex gap-1 lg:gap-3 w-fit -rotate-[12deg] z-10 duration-500">
             <div className="h-3 w-5 lg:h-5 lg:w-7 rounded-b-full bg-mytheme" />
             <div className="h-3 w-5 lg:h-5 lg:w-7 rounded-b-full bg-mytheme" />
           </div>
           <Image src="/p2.png" alt="hero" width={500} height={500} priority className="group brightness-0 group-active:brightness-150 duration-500" />
+        </motion.div> */}
+
+        <motion.div onContextMenu={handleRightClick} className="group relative w-full h-56 md:h-full lg:w-72 select-none" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 4, ease: "easeInOut" }}>
+          <LaptopContainer/>
         </motion.div>
 
         {/*TEXT & BUTTON CONTAINER */}
