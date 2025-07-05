@@ -7,9 +7,9 @@ const LaptopContainer = () => {
     return (
         <Canvas>
             <Suspense fallback="Loading...">
-                <Stage environment="lobby" intensity={0.1}>
+                <Stage environment="lobby" intensity={0.3}>
                     <Laptop />
-                    <OrbitControls enableZoom={false} enableRotate={false} autoRotate autoRotateSpeed={5} />
+                    <OrbitControls enableZoom={false} autoRotate />
                     <PerspectiveCamera position={[-2, 1, 0]} zoom={0.6} makeDefault />
                 </Stage>
             </Suspense>

@@ -13,9 +13,9 @@ const Homepage = () => {
 
   return (
 
-    <motion.div className="flex flex-col gap-8 lg:gap-16 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
+    <motion.div className="flex flex-col justify-center gap-8 lg:gap-16 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
 
-      <motion.span className="mt-6 md:mt-12 flex justify-center text-4xl md:text-5xl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 0.75, ease: "easeInOut" }}>بسم الله الرحمن الرحيم</motion.span>
+      <motion.span className=" flex justify-center text-4xl md:text-5xl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 0.75, ease: "easeInOut" }}>بسم الله الرحمن الرحيم</motion.span>
 
       <div className="items-center flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
 
@@ -44,9 +44,9 @@ const Homepage = () => {
                 <span className="text-cyan-600">R</span>
                 <span className="text-green-500">N</span>
                 <span className="text-gray-800">&nbsp;Stack</span>
-              </span>&nbsp;
+              </span>&nbsp;+&nbsp;
               <span className="p-1 rounded-lg bg-gray-200 dark:text-gray-800">NEXT.js</span>&nbsp;
-              <span className="p-1 rounded-lg bg-gray-200 text-red-500">Laravel</span>&nbsp;
+              {/* <span className="p-1 rounded-lg bg-gray-200 text-red-500">Laravel</span>&nbsp; */}
               <span className="p-1">Developer</span>
               {/*<Image src="/mern.png" alt="MERN" height={256} width={256} className="h-14 w-fit absolute -top-3 left-[680px] transform opacity-0 lg:group-hover:opacity-100 duration-300"/>*/}
             </h1>
