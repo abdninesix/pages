@@ -13,9 +13,9 @@ const Homepage = () => {
 
   return (
 
-    <motion.div className="flex flex-col justify-center gap-4 md:gap-8 lg:gap-16 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
+    <motion.div className="flex flex-col md:justify-center gap-4 md:gap-8 lg:gap-16 h-full overflow-hidden" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
 
-      <motion.span className="flex justify-center text-4xl md:text-5xl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 0.75, ease: "easeInOut" }}>بسم الله الرحمن الرحيم</motion.span>
+      <motion.span className="flex justify-center text-4xl mt-4 md:mt-0 md:text-5xl" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 0.75, ease: "easeInOut" }}>بسم الله الرحمن الرحيم</motion.span>
 
       <div className="items-center flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
 

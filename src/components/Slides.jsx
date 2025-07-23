@@ -36,6 +36,13 @@ export const projects = [
             link: "https://threads-by-abdullah.vercel.app/"
         },
         {
+            src: "/projects/food.png", alt: "restaurant",
+            title: "NextGenBites",
+            desc: "NextGenBites is a modern, responsive restaurant website built with React, Vite, and Tailwind CSS. It features a full-page hero section, dynamic routing with React Router, and clean component-based architecture. Pages include Home, About, Menu, and Contact. Featured menu items are highlighted using Lucide React icons, and the layout is optimized for all screen sizes with smooth transitions and a cohesive UI.",
+            cat: "Frontend",
+            link: "https://nextgenbites-by-abdullah.vercel.app/"
+        },
+        {
             src: "/projects/kashmir.png", alt: "frontend",
             title: "Landing Page",
             desc: "A beautifully crafted frontend for a Kashmir travel application built with Next.js and TypeScript. The design focuses on a smooth user experience with modern UI components, optimized performance, and responsive layout to help users explore scenic destinations across Kashmir.",
