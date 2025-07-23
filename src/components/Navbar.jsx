@@ -6,9 +6,9 @@ import NavLink from "./NavLink";
 import { motion } from "framer-motion"
 import ThemeButton from "./ThemeButton";
 import Socials from "./Socials";
-import { Alex_Brush, Luxurious_Script, Miss_Fajardose } from "next/font/google";
+import { Alex_Brush, JetBrains_Mono, Luxurious_Script, Miss_Fajardose } from "next/font/google";
 
-const myfont2 = Alex_Brush({ weight: '400', subsets: ['latin'], display: 'swap', });
+const myfont2 = JetBrains_Mono({ weight: '400', subsets: ['latin'], display: 'swap', });
 
 const links = [
   { url: "/", title: "Home" },
@@ -42,9 +42,9 @@ const Navbar = () => {
     <div className="h-14 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
 
       {/*LOGO*/}
-      <div className={`${myfont2.className} lg:w-fit md:hidden lg:flex relative z-30`}>
-        <Link href="/" className="flex items-center justify-center">
-          <span className="text-3xl hover:text-4xl rounded-full duration-200">A;</span>
+      <div className={`${myfont2.className} z-30`}>
+        <Link href="/" className="text-3xl">
+          A<span className="text-2xl">BS</span>
           {/*<span className="rounded-lg bg-red-600 text-white px-2">Dev</span>*/}
         </Link>
       </div>
