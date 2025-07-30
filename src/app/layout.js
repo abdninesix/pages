@@ -9,7 +9,7 @@ export async function generateMetadata() {
     title: "Abdullah | Portfolio",
     description: "True design experience",
     icons: {
-      icon: "/favicon.svg",
+      icon: "/favicon2.png",
     },
   };
 }
