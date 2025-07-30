@@ -19,7 +19,7 @@ const Line = () => {
 
 const InfoCard = ({ title, description, date }) => {
   return (
-    <div className="w-5/12 relative bg-gray-300 dark:bg-slate-900 hover:border-b-4 hover:scale-105 shadow-lg p-4 rounded-2xl duration-200">
+    <div className="w-5/12 relative bg-gray-300 dark:bg-slate-950 hover:border-b-4 hover:scale-105 shadow-lg p-4 rounded-2xl duration-200">
       <div className="shadow-lg p-2 md:p-4 bg-white text-gray-800 font-semibold rounded-md text-center w-fit">
         {title}
       </div>
