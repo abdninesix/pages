@@ -6,6 +6,7 @@ import Arrow from "@/components/Arrow";
 import AnimatedCover from "@/components/AnimatedCover";
 import Image from "next/image";
 import Link from "next/link";
+import LaptopContainer from "@/components/laptop/LaptopContainer";
 
 const Line = () => {
   return (
@@ -154,8 +155,9 @@ const AboutPage = () => {
 
         {/*IMAGE CONTAINER*/}
         <motion.div className="hidden overflow-hidden h-[640px] lg:flex items-center duration-200 justify-center w-2/5 sticky top-5 z-30" initial={{ y: -200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 3, ease: "easeInOut" }}>
-          <AnimatedCover />
+          {/* <AnimatedCover /> */}
           {/*<Image src='/about.png' alt="cover" height={512} width={512} className="rounded-tl-[200px] rounded-bl-[200px] h-full w-full"/>*/}
+          <LaptopContainer />
         </motion.div>
 
       </div>
