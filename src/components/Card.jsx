@@ -9,7 +9,7 @@ const Card = ({ image, alt, title, desc, cat, link }) => {
 
     return (
         <div
-            className="flex flex-col max-w-[25rem] p-4 rounded-2xl bg-gray-300 dark:bg-slate-900 shadow-lg duration-200"
+            className="flex flex-col max-w-[25rem] p-4 rounded-2xl bg-gray-300 dark:bg-slate-950 shadow-lg duration-200"
         >
             <Image
                 src={image}
