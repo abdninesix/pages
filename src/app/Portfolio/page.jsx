@@ -43,7 +43,7 @@ const PortfolioPage = () => {
 
         <div className="h-screen flex flex-col gap-5 items-center justify-center text-center">
           <h1 className="text-4xl">Want to start your projects?</h1>
-          <Link href="/Contact" className="bg-mytheme hover:bg-black text-white rounded-md p-2">Let&apos;s work</Link>
+          <Link href="/Contact" className="bg-mytheme hover:bg-black dark:hover:bg-gray-200 dark:hover:text-black text-white rounded-md p-2">Let&apos;s work</Link>
         </div>
 
       </div>

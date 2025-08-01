@@ -30,7 +30,7 @@ const Card = ({ image, alt, title, desc, cat, link }) => {
                     )}
                     <button
                         onClick={() => setShowDesc(prev => !prev)}
-                        className="text-xs text-blue-600 hover:underline w-fit"
+                        className="text-xs text-blue-500 hover:underline w-fit"
                     >
                         {showDesc ? 'Hide' : 'Read more'}
                     </button>
@@ -39,7 +39,7 @@ const Card = ({ image, alt, title, desc, cat, link }) => {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 bg-mytheme hover:bg-black text-white rounded-md p-2 h-fit w-fit"
+                    className="mt-3 bg-mytheme hover:bg-black dark:hover:bg-gray-200 dark:hover:text-black text-white rounded-md p-2 h-fit w-fit"
                 >
                     Demo
                 </Link>

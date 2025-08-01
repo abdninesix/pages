@@ -72,7 +72,7 @@ const ContactPage = () => {
             <span>Your email:</span>
             <input name="user_email" type="text" placeholder="something@somthing.com" className="p-2 rounded-xl duration-200 bg-gray-50 text-gray-800 resize-none outline-none"/>
             {errors.user_email && <span className="w-fit rounded-md text-red-600">{errors.user_email}</span>}
-            <button className="bg-mytheme hover:bg-black text-white rounded-md p-2 w-fit">Send</button>
+            <button className="bg-mytheme hover:bg-black text-white dark:hover:bg-gray-200 dark:hover:text-black rounded-md p-2 w-fit">Send</button>
             {success && <span className="w-fit rounded-md px-1 bg-green-600 text-white text-center">Your message has been sent!</span>}
             {error && <span className="w-fit rounded-md text-red-600">Something went wrong!</span>}
         </motion.form>
