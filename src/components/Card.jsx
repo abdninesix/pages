@@ -30,7 +30,7 @@ const Card = ({ image, alt, title, desc, cat, link }) => {
                     )}
                     <button
                         onClick={() => setShowDesc(prev => !prev)}
-                        className="text-xs text-blue-500 hover:underline w-fit"
+                        className="text-xs font-semibold text-blue-500 hover:underline w-fit"
                     >
                         {showDesc ? 'Hide' : 'Read more'}
                     </button>
