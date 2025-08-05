@@ -22,11 +22,18 @@ export const projects = [
             link: "https://nextgenbites-by-abdullah.vercel.app/"
         },
         {
-            src: "/projects/shadcn.png", alt: "frontend",
+            src: "/projects/shadcn.png", alt: "shadcn",
             title: "Shadcn/UI Dashboard",
             desc: "A modern, fully responsive frontend dashboard built with Next.js 15 and Shadcn UI components. Focused purely on clean design, smooth user interactions, and modular, scalable component architecture.",
             cat: "Frontend",
             link: "https://dashboard-by-abdullah.vercel.app/"
+        },
+        {
+            src: "/projects/ecommerce.png", alt: "ecommerce",
+            title: "E-Commerce Lite",
+            desc: "A modern, full-stack e-commerce platform built with Vite and Express.js. The application is fully responsive across devices and supports complete CRUD operations for users, product categories, and products. Designed for performance and scalability, it provides a seamless user experience and efficient backend management.",
+            cat: "FullStack",
+            link: "https://ecommerce-beta-by-abdullah.vercel.app/"
         },
         {
             src: "/projects/gsap.png", alt: "frontend",
