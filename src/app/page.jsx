@@ -20,7 +20,7 @@ const Homepage = () => {
       <div className="items-center flex flex-col gap-4 md:gap-10 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
 
         {/*IMAGE CONTAINER*/}
-        <motion.div onContextMenu={handleRightClick} className="group relative flex-none overflow-hidden size-52 lg:size-80 bg-gradient-radial from-mytheme to-slate-800 rounded-full hover:rounded-t-full hover:rounded-b-none select-none duration-200" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
+        <motion.div onContextMenu={handleRightClick} className="group relative flex-none overflow-hidden size-52 lg:size-80 bg-gradient-radial from-mytheme to-slate-800 rounded-full hover:rounded-t-full hover:rounded-b-none select-none duration-200" initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 1, ease: "easeInOut" }}>
           <div className="group-active:opacity-0 absolute top-[35%] ml-[31.5%] flex gap-1 lg:gap-3 w-fit -rotate-[12deg] z-10 duration-500">
             <div className="h-3 w-5 lg:h-5 lg:w-7 rounded-b-full bg-mytheme" />
             <div className="h-3 w-5 lg:h-5 lg:w-7 rounded-b-full bg-mytheme" />
