@@ -5,8 +5,11 @@ import Link from "next/link";
 import Arrow from "@/components/Arrow";
 import { projects } from "@/components/Slides";
 import Card from "@/components/Card";
+import { useState } from "react";
 
 const PortfolioPage = () => {
+
+  const [openCard, setOpenCard] = useState(null);
 
   return (
     <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
@@ -14,18 +17,19 @@ const PortfolioPage = () => {
 
         <div className="h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-6xl md:text-8xl text-center">My work<Arrow /></div>
 
-        <div className="flex flex-wrap gap-5">
+        <div className="grid gap-5 justify-items-center items-start grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.flat().map((project, index) => (
-            <div key={index}>
-              <Card
-                image={project.src}
-                alt={project.alt}
-                title={project.title}
-                cat={project.cat}
-                desc={project.desc}
-                link={project.link}
-              />
-            </div>
+            <Card
+              key={project.alt}
+              image={project.src}
+              alt={project.alt}
+              title={project.title}
+              cat={project.cat}
+              desc={project.desc}
+              link={project.link}
+              isOpen={openCard === index}
+              onToggle={() => setOpenCard(openCard === index ? null : index)}
+            />
           ))}
         </div>
 

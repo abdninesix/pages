@@ -8,7 +8,7 @@ export const projects = [
             link: "https://blog-by-abdullah.vercel.app/"
         },
         {
-            src: "/projects/hi.png", alt: "social media",
+            src: "/projects/hi.png", alt: "socialMedia",
             title: "Social Media Platform",
             desc: "An eye-catching, responsive social media frontend built with Next.js and styled with Tailwind CSS. It features dynamic feeds, interactive posts, and smooth navigation—designed for speed, style, and seamless user experience.",
             cat: "Frontend",
@@ -36,7 +36,7 @@ export const projects = [
             link: "https://ecommerce-beta-by-abdullah.vercel.app/"
         },
         {
-            src: "/projects/gsap.png", alt: "frontend",
+            src: "/projects/gsap.png", alt: "gsap",
             title: "GSAP Animation",
             desc: "A sleek and beautiful game website enhanced with smooth GSAP animations for interactive transitions and dynamic gameplay experiences. Designed for performance and visual appeal, every element is brought to life with fluid motion.",
             cat: "Frontend",
@@ -57,14 +57,21 @@ export const projects = [
             link: "https://todo-by-abdullah.vercel.app/"
         },
         {
-            src: "/projects/kashmir.png", alt: "frontend",
+            src: "/projects/kashmir.png", alt: "kashmir",
             title: "Landing Page",
             desc: "A beautifully crafted frontend for a Kashmir travel application built with Next.js and TypeScript. The design focuses on a smooth user experience with modern UI components, optimized performance, and responsive layout to help users explore scenic destinations across Kashmir.",
             cat: "Frontend",
             link: "https://kashmir-travels.vercel.app/"
         },
         {
-            src: "/projects/calc.png", alt: "ai calc",
+            src: "/projects/lazybot.png", alt: "aichat",
+            title: "A.I Powered ChatBot",
+            desc: "Gemini LazyBot is a lightweight, AI-powered chatbot built with Vite, styled using Tailwind CSS, and backed by a Node.js server. It leverages Google Gemini AI to provide intelligent, conversational responses with a clean and responsive UI. Designed for quick setup and minimal overhead.",
+            cat: "FullStack",
+            link: "https://lazy-bot-by-abdullah.vercel.app/"
+        },
+        {
+            src: "/projects/calc.png", alt: "aicalc",
             title: "A.I Powered Calculator",
             desc: "This Python-based drawing calculator lets users sketch mathematical expressions directly on a canvas. It intelligently analyzes the drawing using AI, interprets the expression, calculates the result, and displays it with LaTeX-rendered clarity.",
             cat: "FullStack",
