@@ -65,8 +65,8 @@ export const projects = [
         },
         {
             src: "/projects/lazybot.png", alt: "aichat",
-            title: "A.I Powered ChatBot",
-            desc: "Gemini LazyBot is a lightweight, AI-powered chatbot built with Vite, styled using Tailwind CSS, and backed by a Node.js server. It leverages Google Gemini AI to provide intelligent, conversational responses with a clean and responsive UI. Designed for quick setup and minimal overhead.",
+            title: "A.I Powered LazyBot",
+            desc: "Gemini LazyBot is a lightweight, AI-powered, non-serious chatbot built with Vite, styled using Tailwind CSS, and backed by a Node.js server. It leverages Google Gemini AI to provide intelligent, conversational responses with a clean and responsive UI. Designed for quick setup and minimal overhead.",
             cat: "FullStack",
             link: "https://lazy-bot-by-abdullah.vercel.app/"
         },

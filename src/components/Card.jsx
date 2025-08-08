@@ -39,7 +39,7 @@ const Card = ({ image, alt, title, desc, cat, link, isOpen, onToggle }) => {
                         animate={{ height: 'auto' }}
                         exit={{ height: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="text-sm text-justify text-gray-700 dark:text-gray-300 overflow-hidden"
+                        className="text-sm text-gray-700 dark:text-gray-300 overflow-hidden"
                     >
                         {desc}
                     </motion.p>
