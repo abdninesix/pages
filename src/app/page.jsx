@@ -51,7 +51,7 @@ const Homepage = () => {
               {/* <Image src="/mern.png" alt="MERN" height={256} width={256} className="h-14 w-fit absolute -top-3 left-[680px] transform opacity-0 lg:group-hover:opacity-100 duration-300"/> */}
             </h1>
 
-            <p className="text-justify md:text-xl">As a seasoned developer, I specialize in creating sophisticated, high-performance web applications using React.js/Node.js, Next.js and Laravel. I focus on delivering seamless, intuitive experiences that captivate users and stand the test of time. Let&apos;s build something remarkable together.</p>
+            <p className="text-justify md:text-xl">As a seasoned developer, I specialize in creating sophisticated, high-performance web applications using React.js/Express.js and Next.js. I focus on delivering seamless, intuitive experiences that captivate users and stand the test of time. Let&apos;s build something remarkable together.</p>
           </motion.div>
 
           <motion.div className="flex justify-center lg:justify-start gap-3 lg:gap-4" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.25, delay: 1.5, ease: "easeInOut" }}>
